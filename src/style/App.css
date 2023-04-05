@@ -8,8 +8,76 @@
   src: local("coolvetica_comp"), url("../fonts/coolvetica_comp.otf") format("truetype");
 }
 
+body {
+  font-family: "coolvetica";
+  font-size: 20px;
+  background-color: #ffb973;
+}
 
+h1 {
+  font-size: 72px;
+}
 
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* social related styles */
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-link {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.parallax {
+  background-image: url("../media/prairie.jpg");
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: center;
+  align-items: center;
+}
+
+.description {
+  display: flex;
+  text-align: left;
+}
+
+ /* 
+  * ===================
+  * Boiler plate styles 
+  * ===================
+  */
 .App {
   text-align: center;
 }
@@ -43,22 +111,4 @@
 
 .updown_hover {
   text-align: center;
-}
-
-body {
-  font-family: "coolvetica";
-  background-color: #ffb973;
-}
-
-h1 {
-  font-size: 72px;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-weight: 400;
-  font-size: 24px;
 }
