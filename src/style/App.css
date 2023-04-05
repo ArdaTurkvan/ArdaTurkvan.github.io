@@ -8,6 +8,10 @@
   src: local("coolvetica_comp"), url("../fonts/coolvetica_comp.otf") format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "coolvetica";
   font-size: 20px;
@@ -25,6 +29,19 @@ h2 {
 h3 {
   font-weight: 400;
   font-size: 24px;
+}
+
+/* Nav bar related styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #e310ff;
+}
+
+/* About me section */
+.about-me-section {
+  background: #61dafb;
 }
 
 .page-container {

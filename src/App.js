@@ -41,7 +41,7 @@ export default function App() {
       url: "",
       year: "2023",
       desc: "Lead programmer on a George Brown College game project",
-      skills: ["Trello", "Intrapersonal", "Unity", "C#"]
+      skills: ["Trello", "Interpersonal", "Unity", "C#"]
     },
 
     {
@@ -57,7 +57,9 @@ export default function App() {
 
   return (
     <div className="App">
+      <div className='navbar'>This will be a navbar at some point</div>
       <div className='parallax header-container'>
+        <div>this is some extra text</div>
         <h1>Arda Turkvan</h1>
         <h2>Software Engineer, Game Designer, Nerd</h2>
       </div>
@@ -68,18 +70,20 @@ export default function App() {
           <p className='social-link'><a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">Instagram</a></p>
         </div>
 
-        <h2>About Me</h2>
-        <p className='description'>
-          I'm a graduate of the University of Toronto Scarborough Computer Science program, specializing
-          in Software Engineering.
-          <br></br>
-          I'm currently enrolled in the Postgraduate Game Design program at George Brown College.
-          <br></br>
-          One of my proudest accomplishments is writing a path tracing renderer from scratch in C.
-          <br></br>
-          My favorite pastimes include playing MapleStory and Hearthstone, <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">drawing & painting</a>,
-          and biking along the Beaches in the summer!
-        </p>
+        <div className='about-me-section'>
+          <h2>About Me</h2>
+          <p className='description'>
+            I'm a graduate of the University of Toronto Scarborough Computer Science program, specializing
+            in Software Engineering.
+            <br></br>
+            I'm currently enrolled in the Postgraduate Game Design program at George Brown College.
+            <br></br>
+            One of my proudest accomplishments is writing a path tracing renderer from scratch in C.
+            <br></br>
+            My favorite pastimes include playing MapleStory and Hearthstone, <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">drawing & painting</a>,
+            and biking along the Beaches in the summer!
+          </p>
+        </div>
         <h2>Software Engineering (include images)</h2>
         <div className='project-section'>
           {
