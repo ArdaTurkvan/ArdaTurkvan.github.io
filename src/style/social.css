@@ -1,0 +1,11 @@
+/* social related styles */
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .social-link {
+    padding-left: 20%;
+    padding-right: 20%;
+  }

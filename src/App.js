@@ -1,6 +1,19 @@
+import React from 'react'
+
+// Styles
 import './style/App.css';
+import './style/aboutme.css';
+import './style/project.css';
+
+import './style/social.css';
+import './style/navbar.css';
+
+// Fonts
 import './fonts/coolvetica.otf'
+
+// Components
 import Project from './components/Project'
+import anime from 'animejs';
 
 // note: make the page beach themed cause i love beaches :D
 export default function App() {
@@ -52,8 +65,17 @@ export default function App() {
       desc: "Co-creator of an Attack on Titan fan boardgame, created in Tabletop Simulator!",
       skills: ["Miro", "TTS Workshop", "Lua", "Photoshop", "nanDECK"]
     }
-  ]
+  ];
 
+  /*const animationRef = React.useRef(null);
+  React.useEffect(() => {
+    animationRef.current = anime({
+      targets: ".page-container",
+      loop: true,
+      translateX: 5,
+      translateY: 5
+    });
+  });*/
 
   return (
     <div className="App">
@@ -62,41 +84,46 @@ export default function App() {
         <h1>Arda Turkvan</h1>
         <h2>Software Engineer, Game Designer, Nerd</h2>
       </div>
-      <div className='page-container'>
-        <div className='socials-container'>
-          <p className='social-link'><a href="https://ca.linkedin.com/in/arda-turkvan-8a6a96211" target="_blank" rel="noreferrer">LinkedIn</a></p>
-          <p className='social-link'><a href="https://github.com/ArdaTurkvan" target="_blank" rel="noreferrer">GitHub</a></p>
-          <p className='social-link'><a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">Instagram</a></p>
-        </div>
 
-        <div className='about-me-section'>
-          <h2>About Me</h2>
-          <p className='description'>
-            I'm a graduate of the University of Toronto Scarborough Computer Science program, specializing
-            in Software Engineering.
-            <br></br>
-            I'm currently enrolled in the Postgraduate Game Design program at George Brown College.
-            <br></br>
-            One of my proudest accomplishments is writing a path tracing renderer from scratch in C.
-            <br></br>
-            My favorite pastimes include playing MapleStory and Hearthstone, <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">drawing & painting</a>,
-            and biking along the Beaches in the summer!
-          </p>
-        </div>
-        <h2>Software Engineering (include images)</h2>
-        <div className='project-section'>
-          {
-            projects.filter((project) => project.type === "software").map((project) => 
-            <Project name={project.name} url={project.url} year={project.year} desc={project.desc} skills={project.skills} />)
-          }
-        </div>
+      <div className='scrolling-background'>
+        <div className='page-container'>
+          <div className='socials-container'>
+            <p className='social-link'><a href="https://ca.linkedin.com/in/arda-turkvan-8a6a96211" target="_blank" rel="noreferrer">LinkedIn</a></p>
+            <p className='social-link'><a href="https://github.com/ArdaTurkvan" target="_blank" rel="noreferrer">GitHub</a></p>
+            <p className='social-link'><a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">Instagram</a></p>
+          </div>
 
-        <h2>Game Design (include images)</h2>
-        <div className='project-section'>
-          {
-            projects.filter((project) => project.type === "game").map((project) => 
-            <Project name={project.name} url={project.url} year={project.year} desc={project.desc} skills={project.skills} />)
-          }
+          <div className='section'>
+            <h2>About Me</h2>
+            <div className='about-me content-container'>
+              <p className='description'>
+                I'm a graduate of the University of Toronto Scarborough Computer Science program, specializing
+                in Software Engineering.
+                <br></br>
+                I'm currently enrolled in the Postgraduate Game Design program at George Brown College.
+                <br></br>
+                One of my proudest accomplishments is writing a path tracing renderer from scratch in C.
+                <br></br>
+                My favorite pastimes include playing MapleStory and Hearthstone, <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">drawing & painting</a>,
+                and biking along the Beaches in the summer!
+              </p>
+            </div>
+          </div>
+        
+          <div className='section'>
+            <h2>Projects</h2>
+            <h3>Software Engineering (include images)</h3>
+            {
+              projects.filter((project) => project.type === "software").map((project) => 
+              <Project name={project.name} url={project.url} year={project.year} desc={project.desc} skills={project.skills} />)
+            }
+
+            <h3>Game Design (include images)</h3>
+            {
+              projects.filter((project) => project.type === "game").map((project) => 
+              <Project name={project.name} url={project.url} year={project.year} desc={project.desc} skills={project.skills} />)
+            }
+          </div>
         </div>
       </div>
     </div>

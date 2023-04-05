@@ -8,6 +8,8 @@
   src: local("coolvetica_comp"), url("../fonts/coolvetica_comp.otf") format("truetype");
 }
 
+/* DOM element styles */
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +17,7 @@ html {
 body {
   font-family: "coolvetica";
   font-size: 20px;
-  background-color: #ffb973;
+  background-color: transparent;
 }
 
 h1 {
@@ -31,53 +33,36 @@ h3 {
   font-size: 24px;
 }
 
+/* General page-related styles */
+
+.scrolling-background {
+  background: url('../media/dot_pattern.png');
+  background-repeat: repeat;
+  background-size: 8%;
+  animation: scrolling 10s linear infinite;
+  background-color: #ffb973;
+}
+
+@keyframes scrolling {
+  to {
+    background-position: 600px 600px;
+  }
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 100px;
 }
 
-/* Nav bar related styles */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #e310ff;
-}
-
-/* About me section */
-.about-me-section {
-  background: #61dafb;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  width: 80%;
-}
-
-.project-section {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  flex: 1;
-  width: 80%;
-}
-
-/* social related styles */
-.socials-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.social-link {
-  padding-left: 20%;
-  padding-right: 20%;
-}
 
 .parallax {
   background-image: url("../media/prairie.jpg");
-  min-height: 800px;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,6 +80,24 @@ h3 {
 .description {
   text-align: left;
 }
+
+.section {
+  width: 100%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 5%;
+  justify-content: space-between;
+  border-radius: 50px;
+  /*row-gap: 20px;*/
+}
+
+/*.content-container p {
+  padding-left: 20px;
+  padding-right: 20px;
+}*/
 
  /* 
   * ===================
