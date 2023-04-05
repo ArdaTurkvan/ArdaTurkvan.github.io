@@ -1,8 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import './style/App.css';
+import './fonts/coolvetica.otf'
+import Project from './components/Project'
 
 // note: make the page beach themed cause i love beaches :D
-function App() {
+export default function App() {
+
+  const projects = [
+    // Software Engineering projects
+    {
+      type: "software",
+      name: "Picshare",
+      year: "2021",
+      desc: "An online image editing platform with real-time collaboration. Users can hop in and out of drawing rooms, save images to their profile, and reload them for continued editing in the future.",
+      skills: ["React", "MongoDB", "JavaScript", "PeerJS", "AnimeJS", "Bootstrap", "CSS"]
+    },
+
+    {
+      type: "software",
+      name: "Path Tracing Renderer",
+      year: "2022",
+      desc: "A rendering algorithm that uses computer graphics math techniques to generate realistic visuals! Features include: Texture / Alpha / Normal Mapping, Area light sources, Reflection & Refraction, Depth of Field, Importance sampling, Accelerated rendering through use of Bounded Volue Hierarchies (BVH)",
+      skills: ["C", "Linear Algebra", "Statistics"]
+    },
+
+    {
+      type: "software",
+      name: "BugByte",
+      year: "2023",
+      desc: "A top-down 2D pixel-art dungeon-crawler roguelite creature-catching game. Build an ever-changing team of quirky creatures and keep them alive through strategic combat as you traverse deeper into the Drive to uncover the mysteries of the plague.",
+      skills: ["Unity", "C#", "Aseprite", "Photoshop"]
+    },
+
+    // Game Design projects
+    {
+      type: "game",
+      name: "Break the Card Tower",
+      year: "2023",
+      desc: "desc",
+      skills: ["a skill"]
+    },
+
+    {
+      type: "game",
+      name: "Attack on Titan: Division",
+      year: "2023",
+      desc: "desc",
+      skills: ["a skill"]
+    }
+  ]
+
+
   return (
     <div className="App">
       <h1>Arda Turkvan</h1>
@@ -23,68 +70,18 @@ function App() {
         and biking along the Beaches in the summer!
       </p>
 
-      <h2>Works (include images)</h2>
-      <ul>
-        <li>
-          <h3>Picshare</h3>
-          <p>
-            An online image editing platform with real-time collaboration. Users can hop in and out of
-            drawing rooms, save images to their profile, and reload them for continued editing in the future.
-          </p>
-          <h4>Skills</h4>
-          <ul>
-            <li>React</li>
-            <li>MongoDB</li>
-            <li>JavaScript</li>
-            <li>PeerJS</li>
-            <li>AnimeJS</li>
-            <li>Bootstrap</li>
-            <li>CSS</li>
-          </ul>
-        </li>
+      <h2>Software Engineering (include images)</h2>
+      {
+        projects.filter((project) => project.type === "software").map((project) => 
+        <Project name={project.name} year={project.year} desc={project.desc} skills={project.skills} />)
+      }
 
-        <li>
-          <h3>Path Tracing Renderer</h3>
-          <p>A rendering algorithm that uses computer graphics math techniques to generate realistic visuals!</p>
-          <p>Features include:</p>
-          <ul>
-            <li>Texture / Alpha / Normal Mapping</li>
-            <li>Area light sources</li>
-            <li>Reflection & Refraction</li>
-            <li>Depth of Field</li>
-            <li>Importance sampling</li>
-            <li>Accelerated rendering through use of Bounded Volue Hierarchies (BVH)</li>
-          </ul>
-          <h4>Skills</h4>
-          <ul>
-            <li>C</li>
-            <li>Linear Algebra</li>
-            <li>Statistics</li>
-          </ul>
-        </li>
+      <h2>Game Design (include images)</h2>
+      {
+        projects.filter((project) => project.type === "game").map((project) => 
+        <Project name={project.name} year={project.year} desc={project.desc} skills={project.skills} />)
+      }
 
-        <li>
-          <h3>BugByte</h3>
-          <p>
-            A top-down 2D pixel-art dungeon-crawler roguelite creature-catching game. Build an
-            ever-changing team of quirky creatures and keep them alive through strategic combat as you traverse
-            deeper into the Drive to uncover the mysteries of the plague.
-          </p>
-          <h4>Skills</h4>
-          <ul>
-            <li>Unity</li>
-            <li>C#</li>
-            <li>Aseprite</li>
-            <li>Photoshop</li>
-          </ul>
-        </li>
-
-        <li>
-          <h3></h3>
-        </li>
-      </ul>
     </div>
   );
 }
-
-export default App;
