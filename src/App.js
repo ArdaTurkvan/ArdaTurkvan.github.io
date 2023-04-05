@@ -59,7 +59,6 @@ export default function App() {
     <div className="App">
       <div className='navbar'>This will be a navbar at some point</div>
       <div className='parallax header-container'>
-        <div>this is some extra text</div>
         <h1>Arda Turkvan</h1>
         <h2>Software Engineer, Game Designer, Nerd</h2>
       </div>

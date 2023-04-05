@@ -10,7 +10,7 @@ export default function Project({ name, url, year, desc, skills }) {
   return (
     <div>
       <div className='project-content-container'>
-        <h3><a href={url} target="_blank" rel="noreferrer">{name}</a> {year}</h3>
+        <h3><a href={url} target="_blank" rel="noreferrer">{name}</a> - {year}</h3>
         <p className='description'>{desc}</p>
         <div className='skills-section'>
           <h4>Skills</h4>

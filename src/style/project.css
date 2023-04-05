@@ -1,3 +1,12 @@
+.project-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 5% 2% 5%;
+    background: #fff;
+    flex: 1;
+}
+
 .skills-section {
     display: flex;
     flex-direction: column;
@@ -21,18 +30,10 @@
     padding: 15px;
     width: 10%;
     height: 10%;
-    flex-grow: 1;
+    flex: 1;
 }
 
 .skills-list .skill-container .skill {
     text-align: center;
     font-size: 1.25cqw;
-}
-
-.project-content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2% 5% 2% 5%;
-    background: #fff;
 }
