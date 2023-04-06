@@ -97,17 +97,19 @@ export default function App() {
             <h2>About Me</h2>
             
             <div className='about-me content-container'>
-              <p className='description'>
-                I'm a graduate of the University of Toronto Scarborough Computer Science program, specializing
-                in Software Engineering.
-                <br></br>
-                I'm currently enrolled in the Postgraduate Game Design program at George Brown College.
-                <br></br>
-                One of my proudest accomplishments is writing a path tracing renderer from scratch in C.
-                <br></br>
-                My favorite pastimes include playing MapleStory and Hearthstone, <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">drawing & painting</a>,
-                and biking along the Beaches in the summer!
-              </p>
+              <div className='body-bubble'>
+                <p className='description'>
+                  I'm a graduate of the University of Toronto Scarborough Computer Science program, specializing
+                  in Software Engineering.
+                  <br></br>
+                  I'm currently enrolled in the Postgraduate Game Design program at George Brown College.
+                  <br></br>
+                  One of my proudest accomplishments is writing a path tracing renderer from scratch in C.
+                  <br></br>
+                  My favorite pastimes include playing MapleStory and Hearthstone, <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">drawing & painting</a>,
+                  and biking along the Beaches in the summer!
+                </p>
+              </div>
             </div>
           </div>
         

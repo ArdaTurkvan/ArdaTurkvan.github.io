@@ -1,8 +1,13 @@
 /* Nav bar related styles */
 
 .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 10vh;
     background: #e310ff;
+    z-index: 2;
   }

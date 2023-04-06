@@ -10,6 +10,16 @@
   src: local("coolvetica_comp"), url("../fonts/coolvetica_comp.otf") format("truetype");
 }
 
+@font-face {
+  font-family: "FOT-RodinProUB";
+  src: local("FOT-RodinProUB"), url("../fonts/FOT-RodinProUB.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FOT-SeuratProUB";
+  src: local("FOT-SeuratProUB"), url("../fonts/FOT-SeuratProUB.otf") format("truetype");
+}
+
 /* DOM element styles */
 
 html {
@@ -17,9 +27,13 @@ html {
 }
 
 body {
-  font-family: "coolvetica";
+  font-family: "FOT-RodinProUB";
   font-size: 20px;
   background-color: transparent;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "FOT-SeuratProUB";
 }
 
 h1 {
@@ -80,7 +94,7 @@ h3 {
   align-items: center;
   justify-content: space-evenly;
   row-gap: 30px;
-  background-color: red;
+  background-color: #b7f804;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 2%;
@@ -109,9 +123,7 @@ h3 {
 
 .section {
   width: 100%;
-  padding-bottom: 5%;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-bottom: 2%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -122,15 +134,19 @@ h3 {
 .content-container {
   display: flex;
   flex-direction: column;
-  padding: 2% 4%;
+  padding: 1% 4%;
   justify-content: center;
   align-items: center;
-  border-radius: 150px;
-  box-shadow: 15px 15px rgba(0,0,0,0.2);
-  /*row-gap: 20px;*/
+}
+
+.body-bubble {
   background: #d5ece4d2;
   border: 20px solid #ebfeeb;
+  border-radius: 150px;
+  box-shadow: 15px 15px rgba(0,0,0,0.2);
+  padding: 7% 7%;
 }
+
 
  /* 
   * ===================

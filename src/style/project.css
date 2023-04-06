@@ -1,5 +1,4 @@
 .project.content-container {
-    margin: 100px 0;
 }
 
 .skills-section {
@@ -21,7 +20,7 @@
     display: flex;
     justify-content: center;
     border-radius: 25px;
-    background: #73AD21;
+    background: #b7f804;
     padding-left: 15px;
     padding-right: 15px;
     width: 10%;
@@ -36,14 +35,14 @@
 
 .project-header-wrap {
     position: relative;
-    bottom: 80px;
-    right: 35vw;
+    z-index: 1;
+    right: 25vw;
+    top: 5vh;
 }
 
 .bubble.project-header {
     display: inline-block;
-    padding: 0rem 2rem;
-    margin-right: auto;
+    padding: 0rem 3rem;
     width: 30%;
     height: 30%;
     transform: perspective(2rem) rotateX(1deg) rotateZ(-6deg) scale(1);

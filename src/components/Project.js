@@ -23,15 +23,50 @@ export default function Project({ name, url, year, desc, skills }) {
     });
   });
 
-  function enterBubble(el) {
+  // Body bubble hover handlers
+
+  function enterBodyBubble(el) {
     animationRef.current = anime({
-      targets: "",
+      targets: el,
       loop: false,
+      scale: 1.04,
+      direction: "normal",
+      elasticity: 200
     });
   }
 
-  function leaveBubble(el) {
+  function leaveBodyBubble(el) {
+    animationRef.current = anime({
+      targets: el,
+      loop: false,
+      scale: 1,
+      translateZ: -6,
+      direction: "normal",
+      elasticity: 200
+    });
+  }
 
+  // Header bubble hover handlers
+
+  function enterHeaderBubble(el) {
+    animationRef.current = anime({
+      targets: el,
+      loop: false,
+      scale: 1.04,
+      direction: "normal",
+      elasticity: 200
+    });
+  }
+
+  function leaveHeaderBubble(el) {
+    animationRef.current = anime({
+      targets: el,
+      loop: false,
+      scale: 1,
+      translateZ: -6,
+      direction: "normal",
+      elasticity: 200
+    });
   }
 
 
@@ -41,16 +76,18 @@ export default function Project({ name, url, year, desc, skills }) {
 
         <div className='project-header-wrap'>
           <div className='project-header bubble'>
-            <h4><a href={url} target="_blank" rel="noreferrer">{name}</a> - {year}</h4>
+            <h4><a href={url} target="_blank" rel="noreferrer">{name}</a></h4>
           </div>
         </div>
 
-        <p className='description'>{desc}</p>
-        <div className='skills-section'>
-          <h5>Skills</h5>
-          <ul className='skills-list'>
-            {skills.map((skill) => <li className='skill-container'><div className='skill'>{skill}</div></li>)}
-          </ul>
+        <div className='body-bubble' onMouseEnter={(e) => enterBodyBubble(e.target)} onMouseLeave={(e) => leaveBodyBubble(e.target)}>
+          <p className='description'>{desc}</p>
+          <div className='skills-section'>
+            <h5>Skills</h5>
+            <ul className='skills-list'>
+              {skills.map((skill) => <li className='skill-container'><div className='skill'>{skill}</div></li>)}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
