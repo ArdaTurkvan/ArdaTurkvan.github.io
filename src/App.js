@@ -91,11 +91,6 @@ export default function App() {
 
       <div className='scrolling-background'>
         <div className='page-container'>
-          <div className='socials-container'>
-            <p className='social-link'><a href="https://ca.linkedin.com/in/arda-turkvan-8a6a96211" target="_blank" rel="noreferrer">LinkedIn</a></p>
-            <p className='social-link'><a href="https://github.com/ArdaTurkvan" target="_blank" rel="noreferrer">GitHub</a></p>
-            <p className='social-link'><a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">Instagram</a></p>
-          </div>
 
           <div className='section section1'>
             
@@ -116,7 +111,7 @@ export default function App() {
             </div>
           </div>
         
-          <div className='section section1'>
+          <div className='section section2'>
             <h2>Projects</h2>
             <h3>Software Engineering (include images)</h3>
             {
@@ -129,6 +124,14 @@ export default function App() {
               projects.filter((project) => project.type === "game").map((project) => 
               <Project name={project.name} url={project.url} year={project.year} desc={project.desc} skills={project.skills} />)
             }
+          </div>
+
+          <div className='section'>
+            <div className='socials-container'>
+              <p><a href="https://ca.linkedin.com/in/arda-turkvan-8a6a96211" target="_blank" rel="noreferrer">LinkedIn</a></p>
+              <p><a href="https://github.com/ArdaTurkvan" target="_blank" rel="noreferrer">GitHub</a></p>
+              <p><a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">Instagram</a></p>
+            </div>
           </div>
         </div>
       </div>

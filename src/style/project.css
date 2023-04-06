@@ -22,7 +22,8 @@
     justify-content: center;
     border-radius: 25px;
     background: #73AD21;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 10%;
     height: 10%;
     flex: 1;
@@ -36,7 +37,7 @@
 .project-header-wrap {
     position: relative;
     bottom: 80px;
-    right: 40%;
+    right: 35vw;
 }
 
 .bubble.project-header {

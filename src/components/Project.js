@@ -11,6 +11,7 @@ import anime from 'animejs'
 export default function Project({ name, url, year, desc, skills }) {
 
   const animationRef = React.useRef(null);
+
   React.useEffect(() => {
     animationRef.current = anime({
       targets: ".project-header-wrap",
@@ -21,6 +22,18 @@ export default function Project({ name, url, year, desc, skills }) {
       easing: 'easeInOutSine'
     });
   });
+
+  function enterBubble(el) {
+    animationRef.current = anime({
+      targets: "",
+      loop: false,
+    });
+  }
+
+  function leaveBubble(el) {
+
+  }
+
 
   return (
     <div className='project content-container'>

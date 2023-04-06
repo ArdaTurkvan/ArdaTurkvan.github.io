@@ -2,10 +2,9 @@
 .socials-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   
   .social-link {
-    padding-left: 20%;
-    padding-right: 20%;
+    /* something will probably go here */
   }
