@@ -1,4 +1,5 @@
 import React from 'react'
+import { Parallax, Background } from 'react-parallax';
 
 // Styles
 import './style/App.css';
@@ -67,15 +68,18 @@ export default function App() {
     }
   ];
 
-  /*const animationRef = React.useRef(null);
-  React.useEffect(() => {
+  const animationRef = React.useRef(null);
+  /*React.useEffect(() => {
     animationRef.current = anime({
-      targets: ".page-container",
+      targets: ".content-container",
       loop: true,
-      translateX: 5,
-      translateY: 5
+      translateY: 4,
+      direction: 'alternate',
+      easing: 'easeInOutSine'
     });
   });*/
+
+
 
   return (
     <div className="App">
@@ -93,8 +97,10 @@ export default function App() {
             <p className='social-link'><a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">Instagram</a></p>
           </div>
 
-          <div className='section'>
+          <div className='section section1'>
+            
             <h2>About Me</h2>
+            
             <div className='about-me content-container'>
               <p className='description'>
                 I'm a graduate of the University of Toronto Scarborough Computer Science program, specializing
@@ -110,7 +116,7 @@ export default function App() {
             </div>
           </div>
         
-          <div className='section'>
+          <div className='section section1'>
             <h2>Projects</h2>
             <h3>Software Engineering (include images)</h3>
             {

@@ -1,6 +1,5 @@
 .project.content-container {
-    background: #fff;
-    margin: 15px 0;
+    margin: 100px 0;
 }
 
 .skills-section {
@@ -32,4 +31,23 @@
 .skills-list .skill-container .skill {
     text-align: center;
     font-size: 1.25cqw;
+}
+
+.project-header-wrap {
+    position: relative;
+    bottom: 80px;
+    right: 40%;
+}
+
+.bubble.project-header {
+    display: inline-block;
+    padding: 0rem 2rem;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+    transform: perspective(2rem) rotateX(1deg) rotateZ(-6deg) scale(1);
+}
+
+.project-header h4 {
+    font-size: 30px;
 }

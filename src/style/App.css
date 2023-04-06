@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: "coolvetica";
   src: local("coolvetica"), url("../fonts/coolvetica.otf") format("truetype");
@@ -33,32 +35,46 @@ h3 {
   font-size: 24px;
 }
 
-/* General page-related styles */
+.bubble {
+  background-color: #b7f804;
+  border-radius: 60% / 60% 60% 60% 60%;
+  box-shadow: 15px 15px rgba(0,0,0,0.2);
+}
+
+/* Scrolling background animation */
 
 .scrolling-background {
-  background: url('../media/dot_pattern.png');
   background-repeat: repeat;
+  
+}
+
+.scrolling-background .section1 {
+  background: url('../media/dot_pattern.png');
+  background-color: #ffc78e;
   background-size: 8%;
-  animation: scrolling 10s linear infinite;
-  background-color: #ffb973;
+  animation: scrolling 12s linear infinite;
 }
 
 @keyframes scrolling {
+  from {
+    background-position: 0 0;
+  }
   to {
     background-position: 600px 600px;
   }
 }
+
+/* General page-related styles */
 
 .page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 4%;
-  padding-right: 4%;
+  /*padding-left: 4%;
+  padding-right: 4%;*/
   border-radius: 100px;
 }
-
 
 .parallax {
   background-image: url("../media/prairie.jpg");
@@ -83,21 +99,26 @@ h3 {
 
 .section {
   width: 100%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .content-container {
   display: flex;
   flex-direction: column;
-  padding: 2% 5%;
-  justify-content: space-between;
+  padding: 2% 4%;
+  justify-content: center;
+  align-items: center;
   border-radius: 50px;
+  box-shadow: 15px 15px rgba(0,0,0,0.2);
   /*row-gap: 20px;*/
+  background: #d5ece4de;
+  border: 20px solid #ebfeeb;
 }
-
-/*.content-container p {
-  padding-left: 20px;
-  padding-right: 20px;
-}*/
 
  /* 
   * ===================
