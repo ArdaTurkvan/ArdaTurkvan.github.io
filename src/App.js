@@ -54,7 +54,7 @@ export default function App() {
       name: "Break the Card Tower",
       url: "",
       year: "2023",
-      desc: "Lead programmer on a George Brown College game project",
+      desc: "Lead programmer on a George Brown College game project aaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       skills: ["Trello", "Interpersonal", "Unity", "C#"]
     },
 
@@ -63,29 +63,51 @@ export default function App() {
       name: "Attack on Titan: Division",
       url: "",
       year: "2023",
-      desc: "Co-creator of an Attack on Titan fan boardgame, created in Tabletop Simulator!",
+      desc: "Co-creator of an Attack on Titan fan boardgame, created in Tabletop Simulator! aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaa",
       skills: ["Miro", "TTS Workshop", "Lua", "Photoshop", "nanDECK"]
     }
   ];
 
   const animationRef = React.useRef(null);
-  /*React.useEffect(() => {
+  React.useEffect(() => {
     animationRef.current = anime({
-      targets: ".content-container",
+      targets: ".letter",
       loop: true,
-      translateY: 4,
-      direction: 'alternate',
-      easing: 'easeInOutSine'
+      translateY: [0, 8, 0],
+      direction: 'normal',
+      easing: 'easeInOutSine',
+      delay: anime.stagger(120)
     });
-  });*/
+  });
 
+  // Body bubble hover handlers
+
+  function enterBodyBubble(el) {
+    animationRef.current = anime({
+      targets: el,
+      loop: false,
+      scale: 1.04,
+      direction: "normal",
+      elasticity: 200
+    });
+  }
+
+  function leaveBodyBubble(el) {
+    animationRef.current = anime({
+      targets: el,
+      loop: false,
+      scale: 1,
+      direction: "normal",
+      elasticity: 200
+    });
+  }
 
 
   return (
     <div className="App">
       <div className='navbar'>This will be a navbar at some point</div>
       <div className='parallax header-container'>
-        <h1>Arda Turkvan</h1>
+        <h1>{[..."Arda Turkvan"].map((letter) => <span className='letter'>{letter}</span>)}</h1>
         <h2>Software Engineer, Game Designer, Nerd</h2>
       </div>
 
@@ -93,11 +115,13 @@ export default function App() {
         <div className='page-container'>
 
           <div className='section section1'>
-            
-            <h2>About Me</h2>
+
+            <div className='section-header-wrap'>
+              <div className='section-header'><h2>About Me</h2></div>
+            </div>
             
             <div className='about-me content-container'>
-              <div className='body-bubble'>
+              <div className='body-bubble' onMouseEnter={(e) => enterBodyBubble(e.target)} onMouseLeave={(e) => leaveBodyBubble(e.target)}>
                 <p className='description'>
                   I'm a graduate of the University of Toronto Scarborough Computer Science program, specializing
                   in Software Engineering.
@@ -114,11 +138,16 @@ export default function App() {
           </div>
         
           <div className='section section2'>
-            <h2>Projects</h2>
-            <h3>Software Engineering (include images)</h3>
+            <div className='section-header-wrap'>
+              <div className='section-header'><h2>Projects</h2></div>
+            </div>
+
+            <div className='subsection-header-wrap'>
+              <div className='subsection-header'><h3>Software Engineering (include images)</h3></div>
+            </div>
             {
               projects.filter((project) => project.type === "software").map((project) => 
-              <Project name={project.name} url={project.url} year={project.year} desc={project.desc} skills={project.skills} />)
+              <Project name={project.name} url={project.url} year={project.year} desc={project.desc} skills={project.skills}/>)
             }
 
             <h3>Game Design (include images)</h3>

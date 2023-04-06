@@ -36,8 +36,7 @@
 .project-header-wrap {
     position: relative;
     z-index: 1;
-    right: 25vw;
-    top: 5vh;
+    top: 8vh;
 }
 
 .bubble.project-header {
@@ -45,9 +44,36 @@
     padding: 0rem 3rem;
     width: 30%;
     height: 30%;
-    transform: perspective(2rem) rotateX(1deg) rotateZ(-6deg) scale(1);
 }
 
 .project-header h4 {
     font-size: 30px;
+}
+
+.section-header-wrap {
+    z-index: 1;
+}
+
+.section-header {
+    background: #fff;
+    border-radius: 100px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    box-sizing: border-box;
+}
+
+.section-header:before {
+    position: fixed;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 50px solid #ffea00
+}
+
+.subsection-header-wrap {
+    /*z-index: 1;*/
 }

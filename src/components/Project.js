@@ -2,6 +2,7 @@ import React from 'react'
 import '../style/project.css'
 import '../style/App.css'
 import anime from 'animejs'
+import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
 
 /*
  * A component dedicated to displaying a project that I've worked on
@@ -40,7 +41,6 @@ export default function Project({ name, url, year, desc, skills }) {
       targets: el,
       loop: false,
       scale: 1,
-      translateZ: -6,
       direction: "normal",
       elasticity: 200
     });
@@ -52,9 +52,9 @@ export default function Project({ name, url, year, desc, skills }) {
     animationRef.current = anime({
       targets: el,
       loop: false,
-      scale: 1.04,
+      scale: 1.1,
       direction: "normal",
-      elasticity: 200
+      elasticity: 200,
     });
   }
 
@@ -63,10 +63,13 @@ export default function Project({ name, url, year, desc, skills }) {
       targets: el,
       loop: false,
       scale: 1,
-      translateZ: -6,
       direction: "normal",
-      elasticity: 200
+      elasticity: 200,
     });
+  }
+
+  function headerOnClick() {
+    window.open(url, "_blank");
   }
 
 
@@ -75,8 +78,8 @@ export default function Project({ name, url, year, desc, skills }) {
       <div>
 
         <div className='project-header-wrap'>
-          <div className='project-header bubble'>
-            <h4><a href={url} target="_blank" rel="noreferrer">{name}</a></h4>
+          <div className='project-header bubble' onMouseEnter={(e) => enterHeaderBubble(e.target)} onMouseLeave={(e) => leaveHeaderBubble(e.target)} onClick={headerOnClick}>
+            <h4>{name}</h4>
           </div>
         </div>
 
@@ -89,6 +92,7 @@ export default function Project({ name, url, year, desc, skills }) {
             </ul>
           </div>
         </div>
+
       </div>
     </div>
   )
