@@ -1,5 +1,6 @@
 import React from 'react'
 import { Parallax, Background } from 'react-parallax';
+import projectData from './data/projectinfo.json'
 
 // Styles
 import './style/App.css';
@@ -23,55 +24,6 @@ import BodyBubble from './components/BodyBubble';
 //TODO: make functions that return different sections to pass to the Collapsibles!
 
 export default function App() {
-
-  const projects = [
-    // Software Engineering projects
-    {
-      type: "software",
-      name: "Picshare",
-      url: "https://google.ca",
-      year: "2021",
-      desc: "An online image editing platform with real-time collaboration. Users can hop in and out of drawing rooms, save images to their profile, and reload them for continued editing in the future.",
-      skills: ["React", "MongoDB", "JavaScript", "PeerJS", "AnimeJS", "Bootstrap", "CSS"]
-    },
-
-    {
-      type: "software",
-      name: "Path Tracing Renderer",
-      url: "",
-      year: "2022",
-      desc: "A rendering algorithm that uses computer graphics math techniques to generate realistic visuals! Features include: Texture / Alpha / Normal Mapping, Area light sources, Reflection & Refraction, Depth of Field, Importance sampling, Accelerated rendering through use of Bounded Volue Hierarchies (BVH)",
-      skills: ["C", "Linear Algebra", "Statistics"]
-    },
-
-    {
-      type: "software",
-      name: "BugByte",
-      url: "",
-      year: "2023",
-      desc: "A top-down 2D pixel-art dungeon-crawler roguelite creature-catching game. Build an ever-changing team of quirky creatures and keep them alive through strategic combat as you traverse deeper into the Drive to uncover the mysteries of the plague.",
-      skills: ["Unity", "C#", "Aseprite", "Photoshop"]
-    },
-
-    // Game Design projects
-    {
-      type: "game",
-      name: "Break the Card Tower",
-      url: "",
-      year: "2023",
-      desc: "Lead programmer on a George Brown College game project aaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      skills: ["Trello", "Interpersonal", "Unity", "C#"]
-    },
-
-    {
-      type: "game",
-      name: "Attack on Titan: Division",
-      url: "",
-      year: "2023",
-      desc: "Co-creator of an Attack on Titan fan boardgame, created in Tabletop Simulator! aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaa",
-      skills: ["Miro", "TTS Workshop", "Lua", "Photoshop", "nanDECK"]
-    }
-  ];
 
   const animationRef = React.useRef(null);
   /*React.useEffect(() => {
@@ -121,13 +73,13 @@ export default function App() {
           <div className='subsection-header'><h3>Software Engineering (include images)</h3></div>
         </div>
         {
-          projects.filter((project) => project.type === "software").map((project, index) => 
+          projectData.projects.filter((project) => project.type === "software").map((project, index) => 
           <Project key={index} name={project.name} url={project.url} year={project.year} desc={project.desc} skills={project.skills}/>)
         }
 
         <h3>Game Design (include images)</h3>
         {
-          projects.filter((project) => project.type === "game").map((project, index) => 
+          projectData.projects.filter((project) => project.type === "game").map((project, index) => 
           <Project key={index} name={project.name} url={project.url} year={project.year} desc={project.desc} skills={project.skills} />)
         }
       </div>
