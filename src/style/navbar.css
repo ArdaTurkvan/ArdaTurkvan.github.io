@@ -1,5 +1,6 @@
 /* Nav bar related styles */
 
+/* Navbar should be a pop-out menu on the left side - when the navbar comes out it should shift the entire body of the page to the right */
 .navbar {
     display: flex;
     flex-direction: row;

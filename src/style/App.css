@@ -1,25 +1,5 @@
 
 
-@font-face {
-  font-family: "coolvetica";
-  src: local("coolvetica"), url("../fonts/coolvetica.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "coolvetica_comp";
-  src: local("coolvetica_comp"), url("../fonts/coolvetica_comp.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "FOT-RodinProUB";
-  src: local("FOT-RodinProUB"), url("../fonts/FOT-RodinProUB.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "FOT-SeuratProUB";
-  src: local("FOT-SeuratProUB"), url("../fonts/FOT-SeuratProUB.otf") format("truetype");
-}
-
 /* DOM element styles */
 
 html {
