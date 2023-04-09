@@ -20,13 +20,25 @@
   src: local("FOT-SeuratProUB"), url("../fonts/FOT-SeuratProUB.otf") format("truetype");
 }
 
-.wavy-text {
-    /* a */
+.wavy {
+  animation-name: wavy-anim;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .letter {
     position: relative;
-    animation: wavy-anim 1.3 ease infinite;
+    white-space: pre;
+}
+
+.wavy-wrap {
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+
+.important {
+  color: #2ba4c2;
 }
 
 @keyframes wavy-anim {
@@ -34,7 +46,7 @@
         bottom: 0px;
     }
     50% {
-        bottom: 15px;
+        bottom: 7px;
     }
     100% {
         bottom: 0px;

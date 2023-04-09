@@ -37,7 +37,7 @@ export default function BodyBubble({ child }) {
                 elasticity: 200
             });
         }
-    });
+    }, [hovered]);
 
     return (
     <div>

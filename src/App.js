@@ -18,6 +18,7 @@ import Project from './components/Project'
 import anime from 'animejs';
 import Collapsible from './components/Collapsible';
 import BodyBubble from './components/BodyBubble';
+import WavyText from './components/WavyText';
 
 // note: make the page beach themed cause i love beaches :D
 
@@ -42,6 +43,12 @@ export default function App() {
   //        SECTION CONTENT-RENDERING FUNCTIONS
   // -------------------------------------------------
 
+  function nameTitle() {
+    return (
+      <div>Arda Turkvan</div>
+    )
+  }
+
   // renders content for the 'About me' section
   function sectionAboutMe() {
     return (
@@ -49,14 +56,14 @@ export default function App() {
         <div className='about-me content-container'>
           <BodyBubble child={
             <p className='description'>
-            I'm a graduate of the University of Toronto Scarborough Computer Science program, specializing
-            in Software Engineering.
+            I'm a graduate of the <WavyText text="University of Toronto Scarborough Computer Science"/> program, specializing
+            in <WavyText text="Software Engineering"/>.
             <br></br>
-            I'm currently enrolled in the Postgraduate Game Design program at George Brown College.
+            I'm currently enrolled in the <WavyText text="Postgraduate Game Design program at George Brown College."/>
             <br></br>
-            One of my proudest accomplishments is writing a path tracing renderer from scratch in C.
+            One of my proudest accomplishments is writing a <WavyText text="path tracing renderer"/> from scratch in C.
             <br></br>
-            My favorite pastimes include playing MapleStory and Hearthstone, <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">drawing & painting</a>,
+            My favorite pastimes include playing <WavyText text="MapleStory"/> and <WavyText text="Hearthstone"/>, <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">drawing & painting</a>,
             and biking along the Beaches in the summer!
           </p>
           }></BodyBubble>
@@ -86,12 +93,23 @@ export default function App() {
     );
   }
 
+  function sectionSocials() {
+    return (
+      <div className='socials-container'>
+        <p><a href="https://ca.linkedin.com/in/arda-turkvan-8a6a96211" target="_blank" rel="noreferrer">LinkedIn</a></p>
+        <p><a href="https://github.com/ArdaTurkvan" target="_blank" rel="noreferrer">GitHub</a></p>
+        <p><a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">Instagram</a></p>
+      </div>
+    );
+  }
+
   return (
     <div className="App">
-      <div className='navbar'>This will be a navbar at some point</div>
+      <div className='navbar'><WavyText text="This will be a navbar at some point"></WavyText></div>
       <div className='parallax header-container'>
+        {nameTitle()}
         <div className='wavy-text'><h1>{[..."Arda Turkvan"].map((letter, index) => <span key={index} className='letter'>{letter}</span>)}</h1></div>
-        <h2>Software Engineer, Game Designer, Nerd</h2>
+        <h2><WavyText text="Software Engineer, Game Designer, Nerd"></WavyText></h2>
       </div>
 
       <div className='scrolling-background'>
@@ -111,12 +129,11 @@ export default function App() {
             <Collapsible child={sectionProjects()}></Collapsible>
           </div>
 
-          <div className='section'>
-            <div className='socials-container'>
-              <p><a href="https://ca.linkedin.com/in/arda-turkvan-8a6a96211" target="_blank" rel="noreferrer">LinkedIn</a></p>
-              <p><a href="https://github.com/ArdaTurkvan" target="_blank" rel="noreferrer">GitHub</a></p>
-              <p><a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">Instagram</a></p>
+          <div className='section section3'>
+            <div className='section-header-wrap'>
+              <div className='section-header'><h2>Get in touch!</h2></div>
             </div>
+            <Collapsible child={sectionSocials()}></Collapsible>
           </div>
         </div>
       </div>

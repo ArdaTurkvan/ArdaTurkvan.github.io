@@ -48,7 +48,7 @@ export default function HeaderBubble({ title, url, child }) {
                 elasticity: 200
             });
         }
-    });
+    }, [hovered]);
 
     // cannot for the life of my figure out how to get this hover to work in tandem with the higlight animation
     // on the backburner for now
@@ -65,8 +65,8 @@ export default function HeaderBubble({ title, url, child }) {
 
     return (
     <div>
-        <div ref={bubble} className='project-header-wrap' onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} onClick={handleOnClick}>
-            <div className='project-header bubble'>
+        <div className='project-header-wrap'>
+            <div className='project-header bubble' ref={bubble} onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} onClick={handleOnClick}>
                 <h4>{title}</h4>
             </div>
         </div>
