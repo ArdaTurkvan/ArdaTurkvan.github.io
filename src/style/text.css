@@ -41,6 +41,15 @@
   color: #2ba4c2;
 }
 
+.description {
+  text-align: center;
+}
+
+.letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 @keyframes wavy-anim {
     0% {
         bottom: 0px;

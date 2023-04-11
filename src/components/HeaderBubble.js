@@ -66,7 +66,7 @@ export default function HeaderBubble({ title, url, child }) {
     return (
     <div>
         <div className='project-header-wrap'>
-            <div className='project-header bubble' ref={bubble} onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} onClick={handleOnClick}>
+            <div className='project-header bubble shadow' ref={bubble} onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} onClick={handleOnClick}>
                 <h4>{title}</h4>
             </div>
         </div>

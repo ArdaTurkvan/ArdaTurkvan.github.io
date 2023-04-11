@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom';
 
 // Styles
 import './style/App.css';
@@ -26,21 +27,6 @@ import Contact from './components/Contact';
 export default function App() {
 
   const animationRef = React.useRef(null);
-  /*React.useEffect(() => {
-    animationRef.current = anime({
-      targets: ".letter",
-      loop: true,
-      translateY: [0, 8, 0],
-      direction: 'normal',
-      easing: 'easeInOutSine',
-      delay: anime.stagger(120)
-    });
-  });*/
-
-
-  // -------------------------------------------------
-  //        SECTION CONTENT-RENDERING FUNCTIONS
-  // -------------------------------------------------
 
   function nameTitle() {
     return (
@@ -59,13 +45,7 @@ export default function App() {
       <div className='scrolling-background page-container'>
         <AboutMe />
         <Projects />
-
-          <div className='section section3'>
-            <div className='section-header-wrap'>
-              <div className='section-header'><h2>Get in touch! (put in resume)</h2></div>
-            </div>
-            <Collapsible child={<Contact />}></Collapsible>
-          </div>
+        <Contact />
       </div>
     </div>
   );

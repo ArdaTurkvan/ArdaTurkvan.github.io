@@ -33,13 +33,6 @@ h3 {
   background-repeat: repeat;
 }
 
-.section1 {
-  background: url('../media/dot_pattern_diag.png');
-  background-color: #ffc78e;
-  background-size: 80px 80px;
-  animation: scrolling 2s linear infinite;
-}
-
 .section3 {
   background: url('../media/chat_pattern_diag.png');
   background-color: #ff8de6;
@@ -71,7 +64,7 @@ h3 {
 }
 
 .parallax {
-  background-image: url("../media/prairie.jpg");
+  background-image: url("../media/wave.gif");
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -85,10 +78,6 @@ h3 {
   flex-direction: column;
   flex-flow: center;
   align-items: center;
-}
-
-.description {
-  text-align: center;
 }
 
 .section {
@@ -112,17 +101,67 @@ h3 {
   background: #d5ece4d2;
   border: 20px solid #ebfeeb;
   border-radius: 150px;
-  box-shadow: 15px 15px rgba(0,0,0,0.2);
   padding: 3% 3%;
 }
 
-.letter {
-  display: inline-block;
-  line-height: 1em;
+.shadow {
+  box-shadow: 15px 15px rgba(0,0,0,0.2);
 }
 
 .clickable {
   cursor: pointer;
+}
+
+.section-header-wrap {
+  z-index: 1;
+  background: #fff;
+  border-radius: 100px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  box-sizing: border-box;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.section-header:before {
+  position: fixed;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 50px solid #ffea00
+}
+
+.subsection-header-wrap {
+  /*z-index: 1;*/
+}
+
+.visible {
+  visibility: visible;
+  /*max-height: 10000px;*/
+}
+
+.hidden {
+  visibility: hidden;
+  /*max-height: 0;*/
+}
+
+.collapsible-button {
+  background-image: url('../media/arrow.png');
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
 }
 
 

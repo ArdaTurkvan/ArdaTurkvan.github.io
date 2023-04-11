@@ -8,7 +8,6 @@ import {
   RouterProvider,
 } from "react-router-dom"
 import ErrorPage from './error-page';
-import AboutMe from './components/AboutMe';
 
 const router = createBrowserRouter([
   {
@@ -16,10 +15,6 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: "aboutMe",
-    element: <AboutMe />
-  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

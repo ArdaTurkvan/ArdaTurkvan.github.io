@@ -3,3 +3,10 @@
 .about-me.content-container {
     /*background: #61dafb;*/
 }
+
+.section1 {
+    background: url('../media/dot_pattern_diag.png');
+    background-color: #ffc78e;
+    background-size: 80px 80px;
+    animation: scrolling 2s linear infinite;
+  }

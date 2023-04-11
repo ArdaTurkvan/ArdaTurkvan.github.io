@@ -41,7 +41,7 @@ export default function BodyBubble({ child }) {
 
     return (
     <div>
-        <div ref={bubble} className='body-bubble' onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave}>
+        <div ref={bubble} className='body-bubble shadow' onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave}>
             {child}
         </div>
     </div>
