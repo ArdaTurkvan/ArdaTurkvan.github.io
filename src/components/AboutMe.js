@@ -76,9 +76,11 @@ export default function AboutMe() {
     return (
       <div ref={viewRef} className='section section1 shadow'>
             <a className='anchor' id='section1'></a>
-            <div className='section-header-wrap shadow'>
-              <div className='section-header'><h2><Hover>About Me</Hover></h2></div>
-            </div>    
+            <Hover>
+                <div className='section-header-wrap shadow'>
+                    <div className='section-header'><h2>About Me</h2></div>
+                </div>
+            </Hover>
             {renderContent()}
         </div>
       );

@@ -55,9 +55,11 @@ export default function Projects() {
     return (
         <div ref={viewRef} className='section section2 shadow'>
             <a className='anchor' id='section2'></a>
-            <div className='section-header-wrap shadow'>
-              <div className='section-header'><Hover><h2>Projects (put in more detail)</h2></Hover></div>
-            </div>
+            <Hover>
+                <div className='section-header-wrap shadow'>
+                    <div className='section-header'><h2>Projects (put in more detail)</h2></div>
+                </div>
+            </Hover>
             {renderContent()}
         </div>
     );
