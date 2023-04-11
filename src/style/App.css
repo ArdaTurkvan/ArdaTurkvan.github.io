@@ -27,35 +27,20 @@ h3 {
   font-size: 24px;
 }
 
-.bubble {
-  background-color: #b7f804;
-  border-radius: 60% / 60% 60% 60% 60%;
-  box-shadow: 15px 15px rgba(0,0,0,0.2);
-  cursor: pointer;
-}
-
 /* Scrolling background animation */
 
 .scrolling-background {
   background-repeat: repeat;
-  
 }
 
-.scrolling-background .section1 {
+.section1 {
   background: url('../media/dot_pattern_diag.png');
   background-color: #ffc78e;
   background-size: 80px 80px;
   animation: scrolling 2s linear infinite;
 }
 
-.scrolling-background .section2 {
-  background: url('../media/star_pattern_diag.png');
-  background-color: #54bed8;
-  background-size: 80px 80px;
-  animation: scrolling 2s linear infinite;
-}
-
-.scrolling-background .section3 {
+.section3 {
   background: url('../media/chat_pattern_diag.png');
   background-color: #ff8de6;
   background-size: 80px 80px;
@@ -77,13 +62,12 @@ h3 {
 .page-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  row-gap: 30px;
-  background-color: #b7f804;
+  row-gap: 40px;
+  background-color: #678ec2;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .parallax {
@@ -104,7 +88,7 @@ h3 {
 }
 
 .description {
-  text-align: left;
+  text-align: center;
 }
 
 .section {
@@ -120,10 +104,8 @@ h3 {
 .content-container {
   display: flex;
   flex-direction: column;
-  padding: 3% 4%;
+  padding: 2% 4%;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
 
 .body-bubble {
@@ -131,7 +113,7 @@ h3 {
   border: 20px solid #ebfeeb;
   border-radius: 150px;
   box-shadow: 15px 15px rgba(0,0,0,0.2);
-  padding: 7% 7%;
+  padding: 3% 3%;
 }
 
 .letter {

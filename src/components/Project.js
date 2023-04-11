@@ -3,7 +3,6 @@ import '../style/project.css'
 import '../style/App.css'
 import HeaderBubble from './HeaderBubble'
 import anime from 'animejs'
-import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
 import BodyBubble from './BodyBubble'
 
 /*
@@ -11,7 +10,7 @@ import BodyBubble from './BodyBubble'
  */
 
 // TODO: Add a hard skills, soft skills distinction
-export default function Project({ name, url, year, desc, skills }) {
+export default function Project({ name, url, year, content, skills }) {
 
   const animationRef = React.useRef(null);
 
@@ -36,7 +35,7 @@ export default function Project({ name, url, year, desc, skills }) {
 
         <BodyBubble child={
           <div>
-            <p className='description'>{desc}</p>
+            <p className='description'>{content}</p>
             <div className='skills-section'>
               <h5>Skills</h5>
               <ul className='skills-list'>

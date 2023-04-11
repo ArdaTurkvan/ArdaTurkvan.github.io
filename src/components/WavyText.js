@@ -1,7 +1,7 @@
 import React from 'react'
 import anime from 'animejs'
 
-export default function WavyText({ text }) {
+export default function WavyText({ text, delay=1 }) {
 
     const [hovered, setHovered] = React.useState(false);
 
@@ -13,7 +13,7 @@ export default function WavyText({ text }) {
         Array.from(textRef.current.children).forEach((span, index) => {
             setTimeout(() => {
                 span.classList.add("wavy");
-            }, index * 60);
+            }, index * 60 * delay);
         });
     });
 

@@ -1,0 +1,19 @@
+body {
+    background-color: #678ec2;
+}
+
+.error-description {
+    text-align: center;
+    font-size: 30px;
+}
+ 
+.error-header {
+    text-align: center;
+}
+
+.section-error {
+    background: url('../media/error_pattern.png');
+    background-color: #cacaca;
+    background-size: 80px 80px;
+    animation: scrolling 2s linear infinite;
+}

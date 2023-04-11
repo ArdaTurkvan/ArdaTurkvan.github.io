@@ -1,6 +1,20 @@
 .project.content-container {
 }
 
+.bubble {
+    background-color: #b7f804;
+    border-radius: 60% / 60% 60% 60% 60%;
+    box-shadow: 15px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.section2 {
+    background: url('../media/star_pattern_diag.png');
+    background-color: #54bed8;
+    background-size: 80px 80px;
+    animation: scrolling 2s linear infinite;
+}
+
 .skills-section {
     display: flex;
     flex-direction: column;
@@ -52,16 +66,21 @@
 
 .section-header-wrap {
     z-index: 1;
-}
-
-.section-header {
     background: #fff;
     border-radius: 100px;
-    width: 60%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
+    margin-bottom: 3%;
     box-sizing: border-box;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .section-header:before {
