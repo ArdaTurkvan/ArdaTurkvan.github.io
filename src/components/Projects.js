@@ -3,6 +3,7 @@ import projectData from '../data/projectinfo.jsx'
 import Project from './Project.js';
 import Collapsible from './Collapsible.js';
 import { useInView } from 'react-intersection-observer';
+import Hover from './Hover.js';
 
 export default function Projects() {
 
@@ -52,9 +53,10 @@ export default function Projects() {
     }
 
     return (
-        <div ref={viewRef} className='section section2'>
+        <div ref={viewRef} className='section section2 shadow'>
+            <a className='anchor' id='section2'></a>
             <div className='section-header-wrap shadow'>
-              <div className='section-header'><h2>Projects (put in more detail)</h2></div>
+              <div className='section-header'><Hover><h2>Projects (put in more detail)</h2></Hover></div>
             </div>
             {renderContent()}
         </div>

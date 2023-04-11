@@ -2,13 +2,20 @@
 
 /* Navbar should be a pop-out menu on the left side - when the navbar comes out it should shift the entire body of the page to the right */
 .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 10vh;
-    background: #e310ff;
-    z-index: 2;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7vh;
+  background: #e310ff;
+  z-index: 2;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
+}

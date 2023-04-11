@@ -3,6 +3,7 @@ import anime from 'animejs'
 import { useInView } from 'react-intersection-observer';
 import BodyBubble from './BodyBubble';
 import Collapsible from './Collapsible';
+import Hover from './Hover';
 
 export default function AboutMe() {
 
@@ -20,17 +21,27 @@ export default function AboutMe() {
         animationRef.current = anime({
             targets: selfRef.current,
             loop: false,
-            duration: 500,
+            duration: 1000,
             scale: [0.8, 1.0],
             opacity: [0.0, 1.0],
             direction: 'normal',
             easing: 'easeOutQuad'
         });
-    }, [hidden]);
 
-    function toggle() {
+        if (inView === true) {
+            animationRef.current.reset();
+            animationRef.current.play();
+          } else {
+            animationRef.current.reset();
+            animationRef.current.pause();
+          }
+    }, [inView]);
+
+    
+
+    /*function toggle() {
         setHidden(!hidden);
-    }
+    }*/
 
     function renderContent() {
         return (
@@ -38,6 +49,9 @@ export default function AboutMe() {
                 <div ref={selfRef} className='content-container'>
                     <BodyBubble child={
                         <div className='description'>
+                            <p>
+                                Hi! I'm <span className="important">Arda</span>.
+                            </p>
                             <p>
                                 I'm a graduate of the <span className="important">University of Toronto Scarborough Computer Science</span> program, specializing
                                 in <span className="important">Software Engineering</span>.
@@ -60,9 +74,10 @@ export default function AboutMe() {
     }
 
     return (
-      <div ref={viewRef} className='section section1'>
+      <div ref={viewRef} className='section section1 shadow'>
+            <a className='anchor' id='section1'></a>
             <div className='section-header-wrap shadow'>
-              <div className='section-header'><h2>About Me</h2></div>
+              <div className='section-header'><h2><Hover>About Me</Hover></h2></div>
             </div>    
             {renderContent()}
         </div>

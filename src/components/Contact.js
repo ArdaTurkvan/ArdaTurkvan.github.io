@@ -14,7 +14,8 @@ export default function Contact() {
     };
 
     return (
-      <div className='section section3'>
+      <div className='section section3 shadow'>
+          <a className='anchor' id='section3'></a>
           <div className='section-header-wrap'>
             <div className='section-header'><h2>Get in touch! (put in resume)</h2></div>
           </div>

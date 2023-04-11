@@ -5,6 +5,7 @@ import '../style/App.css';
 import HeaderBubble from './HeaderBubble';
 import anime from 'animejs';
 import BodyBubble from './BodyBubble';
+import Hover from './Hover';
 
 /*
  * A component dedicated to displaying a project that I've worked on
@@ -20,7 +21,7 @@ export default function Project({ name, url, year, content, skills }) {
   const [viewRef, inView] = useInView({
     triggerOnce: true,
     rootMargin: '0px 0px',
-    delay: 1000
+    delay: 800
   })
 
   React.useEffect(() => {
@@ -48,8 +49,7 @@ export default function Project({ name, url, year, content, skills }) {
   return (
     <div className='project content-container'>
       <div ref={selfRef}>
-
-        <HeaderBubble title={name} url={url}/>
+        <Hover><HeaderBubble title={name} url={url}/></Hover>
 
         <BodyBubble child={
           <div ref={viewRef}>

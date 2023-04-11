@@ -19,6 +19,7 @@ import Collapsible from './components/Collapsible';
 import WavyText from './components/WavyText';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
+import Navbar from './components/Navbar';
 
 // note: make the page beach themed cause i love beaches :D
 
@@ -30,16 +31,16 @@ export default function App() {
 
   function nameTitle() {
     return (
-      <div className='wavy-text'><h1>{[..."Arda Turkvan"].map((letter, index) => <span key={index} className='letter'>{letter}</span>)}</h1></div>
+      <div className='wavy-text header'><h1>{[..."Arda Turkvan"].map((letter, index) => <span key={index} className='letter'>{letter}</span>)}</h1></div>
     )
   }
 
   return (
     <div className="App">
-      <div className='navbar'><WavyText text="This will be a navbar at some point"></WavyText></div>
-      <div className='parallax header-container'>
+      <Navbar />
+      <div id="home" className='parallax header-container'>
         {nameTitle()}
-        <h2><WavyText text="Software Engineer, Game Designer, Nerd"></WavyText></h2>
+        <h2 className='header'><WavyText text="Software Engineer, Game Designer, Nerd"></WavyText></h2>
       </div>
 
       <div className='scrolling-background page-container'>
