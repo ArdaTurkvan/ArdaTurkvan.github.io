@@ -25,11 +25,11 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 9vw;
+  font-size: 6vw;
 }
 
 h2 {
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 h3 {
@@ -47,6 +47,22 @@ h3 {
 .letter {
     position: relative;
     white-space: pre;
+    cursor: default;
+}
+
+.hover-letter {
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.hover-letter:hover {
+  text-shadow: 6px 6px #ff7369, 14px 14px black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 2px;
+  /*text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;*/
+  margin-left: 10px;
+  margin-right: 10px;
+  transform: translateY(-10px);
 }
 
 .wavy-wrap {
@@ -60,7 +76,6 @@ h3 {
 
 .description {
   text-align: center;
-  padding-top: 5vw;
 }
 
 .letter {
@@ -82,4 +97,29 @@ h3 {
 
 .header {
   color: #000;
+}
+
+.subheader {
+  color: #000;
+}
+
+
+.cool-header {
+  display: inline-block;
+  font-size:120px;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+						8px 8px #ff7369,
+						20px 20px #000000;
+}
+
+.cool-subheader {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 
+						0px 0px #ff7369;
 }

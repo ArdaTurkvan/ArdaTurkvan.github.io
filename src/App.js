@@ -20,6 +20,7 @@ import WavyText from './components/WavyText';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import Hover from './components/Hover';
 
 // note: make the page beach themed cause i love beaches :D
 
@@ -29,9 +30,29 @@ export default function App() {
 
   const animationRef = React.useRef(null);
 
+  React.useEffect(() => {
+    animationRef.current = anime.timeline();
+    animationRef.current.add({
+      targets: '.cool-header .letter',
+      translateY: [-500, 0],
+      duration: 2000,
+      easing: 'easeOutSine',
+      direction: 'normal',
+      delay: anime.stagger(120)
+    })
+    .add({
+      targets: '.subheader',
+      translateY: [50, 0],
+      opacity: [0.0, 1.0],
+      duration: 2000,
+      easing: 'easeOutSine'
+    });
+  });
+
+
   function nameTitle() {
     return (
-      <div className='wavy-text header'><h1>{[..."Arda Turkvan"].map((letter, index) => <span key={index} className='letter'>{letter}</span>)}</h1></div>
+      <Hover><div className='wavy-text header cool-header'><h1>{[..."Arda Turkvan"].map((letter, index) => <span key={index} className='letter'>{letter}</span>)}</h1></div></Hover>
     )
   }
 
@@ -40,10 +61,10 @@ export default function App() {
       <Navbar />
       <div id="home" className='parallax header-container'>
         {nameTitle()}
-        <h2 className='header'><WavyText text="Software Engineer, Game Designer, Nerd"></WavyText></h2>
+        <h2 className='subheader cool-subheader'><WavyText text="Software Engineer, Game Designer, Nerd"></WavyText></h2>
       </div>
 
-      <div className='scrolling-background page-container'>
+      <div className='scrolling-background page-container shadow'>
         <AboutMe />
         <Projects />
         <Contact />
