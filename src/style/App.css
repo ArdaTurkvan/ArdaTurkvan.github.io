@@ -7,7 +7,7 @@ html {
 body {
   font-family: "FOT-RodinProUB";
   font-size: 20px;
-  background: rgba(255,115,105,1);
+  background: linear-gradient(0deg, rgb(13, 13, 63) 10%, rgb(23, 112, 245) 25%, rgba(255,115,105,1) 33%);
 }
 
 /* Scrolling background animation */

@@ -35,16 +35,17 @@ export default function App() {
     animationRef.current.add({
       targets: '.cool-header .letter',
       translateY: [-500, 0],
-      duration: 2000,
+      opacity: [0.0, 1.0],
+      duration: 800,
       easing: 'easeOutSine',
       direction: 'normal',
-      delay: anime.stagger(120)
+      delay: anime.stagger(60)
     })
     .add({
       targets: '.subheader',
       translateY: [50, 0],
       opacity: [0.0, 1.0],
-      duration: 2000,
+      duration: 1000,
       easing: 'easeOutSine'
     });
   });

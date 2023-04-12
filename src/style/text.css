@@ -58,7 +58,7 @@ h3 {
 .hover-letter:hover {
   text-shadow: 6px 6px #ff7369, 14px 14px black;
   -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 4px;
   /*text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;*/
   margin-left: 10px;
   margin-right: 10px;
@@ -118,7 +118,7 @@ h3 {
 
 .cool-subheader {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: black;
   text-shadow: 
 						0px 0px #ff7369;
