@@ -55,10 +55,9 @@
 .bubble.project-header {
     display: inline-block;
     padding: 0rem 3rem;
-    width: 30%;
-    height: 30%;
+    width: 30vw;
 }
 
 .project-header h4 {
-    font-size: 30px;
+    font-size: 2.5vw;
 }
