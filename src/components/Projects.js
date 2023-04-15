@@ -35,15 +35,17 @@ export default function Projects() {
     function renderContent() {
         return (
             <div ref={selfRef}>
-                <div className='subsection-header-wrap'>
+                <div className='subsection-header-wrap shadow'>
                     <div className='subsection-header'><h3>Software</h3></div>
                 </div>
                 {
                     projectData.projects.filter((project) => project.type === "software").map((project, index) => 
                     <Project key={index} name={project.name} url={project.url} year={project.year} content={project.content} skills={project.skills}/>)
                 }
-        
-                <h3>Games</h3>
+
+                <div className='subsection-header-wrap shadow'>
+                    <div className='subsection-header'><h3>Games</h3></div>
+                </div>
                 {
                     projectData.projects.filter((project) => project.type === "game").map((project, index) => 
                     <Project key={index} name={project.name} url={project.url} year={project.year} content={project.content} skills={project.skills} />)
@@ -57,7 +59,7 @@ export default function Projects() {
             <a className='anchor' id='section2'></a>
             <Hover>
                 <div className='section-header-wrap shadow'>
-                    <div className='section-header'><h2>Projects (put in more detail)</h2></div>
+                    <div className='section-header'><h2>Projects</h2></div>
                 </div>
             </Hover>
             {renderContent()}

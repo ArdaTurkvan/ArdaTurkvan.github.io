@@ -53,7 +53,7 @@ export default function Project({ name, url, year, content, skills }) {
 
         <BodyBubble child={
           <div ref={viewRef}>
-            <p className='description'>{content}</p>
+            <div className='description'>{content}</div>
             <div className='skills-section'>
               <h5>Skills</h5>
               <ul className='skills-list'>

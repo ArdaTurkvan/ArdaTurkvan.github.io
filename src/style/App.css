@@ -121,18 +121,13 @@ body {
   white-space: nowrap;
 }
 
-.section-header:before {
-  position: fixed;
-  z-index: -1;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border: 50px solid #ffea00
-}
-
 .subsection-header-wrap {
-  /*z-index: 1;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #b7f804;
+  top: 40px;
 }
 
 .visible {

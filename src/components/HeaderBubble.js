@@ -37,7 +37,7 @@ export default function HeaderBubble({ title, url, child }) {
                 loop: false,
                 scale: 1.1,
                 direction: "normal",
-                elasticity: 200,
+                elasticity: 2000,
             });
         } else {
             animationRef.current = anime({
@@ -45,7 +45,7 @@ export default function HeaderBubble({ title, url, child }) {
                 loop: false,
                 scale: 1,
                 direction: "normal",
-                elasticity: 200
+                elasticity: 2000
             });
         }
     }, [hovered]);
@@ -66,7 +66,7 @@ export default function HeaderBubble({ title, url, child }) {
     return (
     <div>
         <div className='project-header-wrap'>
-            <div className='project-header bubble shadow' ref={bubble} onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} onClick={handleOnClick}>
+            <div className='project-header bubble shadow' ref={bubble} onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave}>
                 <h4>{title}</h4>
             </div>
         </div>
