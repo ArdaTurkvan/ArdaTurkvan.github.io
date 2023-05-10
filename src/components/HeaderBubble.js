@@ -2,7 +2,7 @@ import React from 'react'
 import anime from 'animejs'
 
 
-export default function HeaderBubble({ title, url, child }) {
+export default function HeaderBubble(props) {
 
     // keep track of if the bubble is hovered
     // the ref lets us reference this specific instance of the bubble
@@ -16,7 +16,7 @@ export default function HeaderBubble({ title, url, child }) {
     // handles what happens when the header is clicked
     // currently opens a passed in url in a new window
     function handleOnClick() {
-        window.open(url, "_blank");
+        window.open(props.url, "_blank");
     }
 
     // handles setting the hovered state based on if the mouse is over the component
@@ -67,7 +67,8 @@ export default function HeaderBubble({ title, url, child }) {
     <div>
         <div className='project-header-wrap'>
             <div className='project-header bubble shadow' ref={bubble} onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave}>
-                <h4>{title}</h4>
+                <h4>{props.title}</h4>
+                {props.children}
             </div>
         </div>
     </div>

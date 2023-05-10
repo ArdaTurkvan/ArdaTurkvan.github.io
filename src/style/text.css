@@ -134,3 +134,9 @@ h3 {
 .subsection-header h3 {
   font-size: 2.5vw;
 }
+
+.project-year {
+  position: relative;
+  bottom: 3vw;
+  font-size: 1.25vw;
+}

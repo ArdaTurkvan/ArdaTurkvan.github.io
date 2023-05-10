@@ -14,38 +14,6 @@
     animation: scrolling 2s linear infinite;
 }
 
-.skills-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.skills-list {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0;
-    justify-content: center;
-    flex-flow: row wrap;
-    align-content: flex-start;
-}
-
-.skills-list .skill-container {
-    display: flex;
-    justify-content: center;
-    border-radius: 25px;
-    background: #b7f804;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 10%;
-    height: 10%;
-    flex: 1;
-}
-
-.skills-list .skill-container .skill {
-    text-align: center;
-    font-size: 1.25cqw;
-}
-
 .project-header-wrap {
     position: relative;
     z-index: 1;

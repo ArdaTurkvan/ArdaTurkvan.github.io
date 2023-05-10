@@ -1,0 +1,87 @@
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #34796162;
+    border-radius: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 10px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 25px;
+    flex: 1;
+    height: 50px;
+}
+
+li.soft {
+    background-color: pink;
+}
+
+li.hard {
+    background-color: red;
+}
+
+li.subject {
+    background-color: yellow;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 15px;
+}
+
+.soft-icon {
+    background-image: url("../media/soft.png");
+}
+
+.hard-icon {
+    background-image: url("../media/hard.png");
+}
+
+.subject-icon {
+    background-image: url("../media/subject.png");
+}
+
+h5 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+.skills-header {
+    width: 85%;
+    border-radius: 100px;
+    background-color: #b7f804;
+}
+
+.skill > p {
+    font-size: 14px;
+}

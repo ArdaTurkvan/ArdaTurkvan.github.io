@@ -13,7 +13,10 @@ export default {
                 <p>As part of the project, I made significant contributions to the early backend architecture through setting up our <span className="important">RESTful web API</span> with <span className="important">Express.js</span>. I was also fully in charge of the website front-end and peer-to-peer connectivity. I designed and wrote all of the UI, the title screen, and the chat.</p>
                 <p className='important'><em>This GitHub repository is private and available upon request</em></p>
             </div>,
-            "skills": ["React", "MongoDB", "JavaScript", "PeerJS", "Express.js", "AnimeJS", "Bootstrap", "CSS"]
+            "skills": {
+                "soft": ["Self-learning"],
+                "hard": ["React", "MongoDB", "JavaScript", "PeerJS", "Express.js", "AnimeJS", "Bootstrap", "CSS", "Trello"],
+            }
         },
     
         {
@@ -23,24 +26,36 @@ export default {
             "year": "2022",
             "content": <div>
                 <p>A <span className="important">rendering algorithm</span> that uses computer graphics math techniques to generate realistic visuals! Features include: <span className="important">Texture / Alpha / Normal Mapping, Area light sources, Reflection & Refraction, Depth of Field, Importance sampling, Recursive shapes,</span> and <span className="important">Accelerated rendering through use of Bounded Volue Hierarchies (BVH)</span>.</p>
-                <p>Aside from starter code I was given as part of the <span className="important">Computer Graphics course</span> at <span className="important">University of Toronto Scarborough</span>, I created the entire rendering algorithm using <span className="important">C</span>. The project originally started as a more simple <span className="important">Phong Illumunation</span> ray tracer, which then served as a code base for the statistics-based Path Tracing version. I used recursion to simulate thousands of light rays being fired through each pixel of a 1024x1024 image, with each light ray having a maximum of 10 bounces.</p>
+                <p>Aside from starter code I was given as part of the <span className="important">Computer Graphics course</span> at <span className="important">University of Toronto Scarborough</span>, I created the entire rendering algorithm using <span className="important">C</span>. <span className="important">MATLAB</span> was used to ensure that the math was correct before implementation. The project originally started as a more simple <span className="important">Phong Illumunation</span> ray tracer, which then served as a code base for the statistics-based Path Tracing version. I used recursion to simulate thousands of light rays being fired through each pixel of a 1024x1024 image, with each light ray having a maximum of 10 bounces.</p>
                 <p>My render also won the <span className="important">award for being the best render</span> in the class, and I got a mug with the render on it as a prize!</p>
+                <p>The first picture below is the final render, and the second picture is a progress photo taken of two simple spheres, one reflective and one refractive, inside of a <a href="https://en.wikipedia.org/wiki/Cornell_box" target="__blank"><span className="important">Cornell Box</span></a>.</p>
                 <div className="image-display">
                     <img src="pathtracer1.png" alt="The final resulting render that I won an award for!"></img>
                     <img src="pathtracer2.png" alt="A process photo of the algorithm being ran on a 'Cornell Box', a simple box room with 2 different colored walls and 2 spheres - one reflective and one refractive."></img>
                 </div>
                 <p className='important'><em>This GitHub repository is private and available upon request</em></p>
             </div>,
-            "skills": ["C", "Linear Algebra", "Statistics"]
+            "skills": {
+                "hard": ["C", "MATLAB"],
+                "subjects": ["Linear Algebra", "Statistics"]
+            }
         },
     
         {
             "type": "game",
             "name": "BugByte",
             "url": "",
-            "year": "2023",
-            "content": "A top-down 2D pixel-art dungeon-crawler roguelite creature-catching game. Build an ever-changing team of quirky creatures and keep them alive through strategic combat as you traverse deeper into the Drive to uncover the mysteries of the plague.",
-            "skills": ["Unity", "C#", "Aseprite", "Photoshop"]
+            "year": "2023 - ???",
+            "content": <div>
+                <p>A 2D pixel-art dungeon-crawler roguelite creature-catching game, meant to capture the same emotions as a <span className='important'>Pokemon Nuzlocke</span> playthrough. Build an ever-changing team of quirky creatures and keep them alive through strategic combat as you traverse deeper into the Drive to uncover the mysteries of the plague.</p>
+                <p>The game is currently a  <span className='important'>work in progress</span>, but I intend to create every aspect of the game by myself. That includes original 32-bit animated  <span className='important'>pixel art</span>, all of the <span className='important'>Unity</span> code, and all the  <span className='important'>concept art</span> I need.</p>
+                <p>This is a self-driven thesis project, part of the <span className='important'>Game Design program</span> at <span className='important'>George Brown College</span>.</p>
+                <p> <span className='important'>Stay tuned!</span></p>
+            </div>,
+            "skills": {
+                "hard": ["Unity", "C#", "Aseprite", "Photoshop", "Trello"],
+                "subjects": ["Linear Algebra"]
+            }
         },
         
         {
@@ -49,9 +64,19 @@ export default {
             "url": "",
             "year": "2023",
             "content": <div>
-                <p>Test content</p>
+                <p>A Roguelike deck-building strategy game developed as part of <span className='important'>George Brown College</span>'s <span className='important'>Game Design</span> program. We developed a <span className='important'>vertical slice</span> which we then displayed at the <a href="https://levelupshowcase.com">2023 Level Up Student Showcase</a> in Toronto.</p>
+                <p>I was the <span className='important'>Technical Director</span> of the project. As part of my responsibilities, I was in charge of managing and directing our group of talented student programmers to ensure that progress was smooth in converting game design documents into tangible gameplay. I would host regular <span className='important'>sprint meetings</span> and <span className='important'>stand-ups</span> to check in with the programmers. I also served as the <span className='important'>bridge</span> between our art and programming teams, as I had a lot of experience with both ends.</p>
+                <p>I also contributed to the project directly, by writing the code for the hexagonal board, to help make the student programmers' workloads lighter!</p>
+                <p>The project spanned 6 months, with <a href="https://www.linkedin.com/in/jesse-conover-109459266/" target="__blank">Jesse Bowles Connover</a> as our <span className='important'>Creative Lead</span>.</p>
+                <div className="image-display">
+                    <img src="bct1.png" alt="The logo for our game!"></img>
+                    <img src="bct2.png" alt="A screenshot of gameplay."></img>
+                </div>
             </div>,
-            "skills": ["Trello", "Interpersonal", "Unity", "C#", "Management"]
+            "skills": {
+                "soft": ["Interpersonal", "Management"],
+                "hard": ["Unity", "C#", "Trello"],
+            }
         },
     
         {
@@ -62,7 +87,10 @@ export default {
             "content": <div>
                 <p>Co-creator of an Attack on Titan fan boardgame, created in <span className="important">Tabletop Simulator</span>! I helped bring the game to life by taking part in early game design stages, designing the core gameplay loop and unique 3-player aspect. I then ported the game over to Tabletop Simulator. There I implemented plenty of quality-of-life <span className="important">Lua scripts</span> to make the game run smoother, and created all the custom art assets using a combination of <span className="important">Photoshop</span> and <span className="important">nanDECK</span>.</p>
             </div>,
-            "skills": ["Miro", "TTS Workshop", "Lua", "Photoshop", "nanDECK", "Design"]
+            "skills": {
+                "soft": ["Game Design", "Gameplay Iteration"],
+                "hard": ["Miro", "TTS Workshop", "Lua", "Photoshop", "nanDECK"],
+            }
         },
 
         {
@@ -70,8 +98,16 @@ export default {
             "name": "MVTANT",
             "url": "",
             "year": "2015",
-            "content": "A self-driven project where I created a core game prototype for a run-and-gun platforming game! Made entirely in Game Maker using its built in language, GML. All artwork in the game was hand-drawn by me using Game Maker's built in sprite editor!",
-            "skills": ["Game Maker", "GML", "Art"]
+            "content": <div>
+                <p>A self-driven project where I created a core game prototype for a run-and-gun platforming game! Made entirely in <span className='important'>Game Maker</span> using its built in language, <span className='important'>GML</span>. All artwork in the game was <span className='important'>hand-drawn by me</span> using Game Maker's built in sprite editor!</p>
+                <p>As part of the project, I pushed myself to learn <span className='important'>GML</span> from scratch. I built all mechanics, including physics and combat mechanics for shooting and weapon-switching, myself.</p>
+                <p>I am still to this day incredibly proud of what I was able to achieve!</p>
+            </div>,
+            "skills": {
+                "soft": ["Self-learning"],
+                "hard": ["Game Maker Studio", "GML", "Photoshop"],
+                "subjects": ["Art"]
+            }
         }
     ]
 }

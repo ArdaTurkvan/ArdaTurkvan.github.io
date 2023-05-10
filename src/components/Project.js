@@ -6,6 +6,7 @@ import HeaderBubble from './HeaderBubble';
 import anime from 'animejs';
 import BodyBubble from './BodyBubble';
 import Hover from './Hover';
+import Skills from './Skills';
 
 /*
  * A component dedicated to displaying a project that I've worked on
@@ -49,16 +50,18 @@ export default function Project({ name, url, year, content, skills }) {
   return (
     <div className='project content-container'>
       <div ref={selfRef}>
-        <Hover><HeaderBubble title={name} url={url}/></Hover>
+        <Hover>
+          <HeaderBubble title={name} url={url}>
+            <span class="project-year">{year}</span>
+          </HeaderBubble>
+        </Hover>
 
         <BodyBubble child={
           <div ref={viewRef}>
             <div className='description'>{content}</div>
             <div className='skills-section'>
-              <h5>Skills</h5>
-              <ul className='skills-list'>
-                {skills.map((skill, index) => <li key={index} className='skill-container'><div className='skill'>{skill}</div></li>)}
-              </ul>
+              <h5 className="skills-header">Skills</h5>
+              <Skills skillsList={skills}/>
             </div>
           </div>
         }></BodyBubble>

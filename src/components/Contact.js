@@ -22,7 +22,7 @@ export default function Contact() {
           <a className='anchor' id='section3'></a>
           <Hover>
             <div className='section-header-wrap'>
-              <div className='section-header'><h2>Get in touch! (put in resume)</h2></div>
+              <div className='section-header'><h2>Get in touch!</h2></div>
             </div>
           </Hover>
           {renderContent()}
