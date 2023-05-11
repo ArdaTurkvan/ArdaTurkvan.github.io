@@ -52,7 +52,7 @@ export default function Project({ name, url, year, content, skills }) {
       <div ref={selfRef}>
         <Hover>
           <HeaderBubble title={name} url={url}>
-            <span class="project-year">{year}</span>
+            <span className="project-year">{year}</span>
           </HeaderBubble>
         </Hover>
 
@@ -60,7 +60,7 @@ export default function Project({ name, url, year, content, skills }) {
           <div ref={viewRef}>
             <div className='description'>{content}</div>
             <div className='skills-section'>
-              <h5 className="skills-header">Skills</h5>
+              <h5 className="skills-header short-shadow">Skills</h5>
               <Skills skillsList={skills}/>
             </div>
           </div>

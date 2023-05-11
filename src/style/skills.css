@@ -32,23 +32,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     border-radius: 10px;
+    border: 5px solid #ebfeeb;
     padding: 10px 25px;
     flex: 1;
     height: 50px;
 }
 
 li.soft {
-    background-color: pink;
+    background-color: rgb(231, 202, 106);
 }
 
 li.hard {
-    background-color: red;
+    background-color: rgb(175, 116, 214);
 }
 
 li.subject {
-    background-color: yellow;
+    background-color: rgb(164, 252, 233);
 }
 
 .icon {
@@ -72,7 +73,7 @@ li.subject {
 }
 
 h5 {
-    font-size: 2vw;
+    font-size: 1.25vw;
     margin: 0;
 }
 

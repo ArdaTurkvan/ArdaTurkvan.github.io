@@ -48,24 +48,27 @@ export default function AboutMe() {
             <div>
                 <div ref={selfRef} className='content-container'>
                     <BodyBubble child={
-                        <div className='description'>
-                            <p>
-                                Hi! I'm <span className="important">Arda</span>.
-                            </p>
-                            <p>
-                                I'm a graduate of the <span className="important">University of Toronto Scarborough Computer Science</span> program, specializing
-                                in <span className="important">Software Engineering</span>.
-                            </p>
-                            <p>
-                                I'm currently enrolled in the <span className="important">Postgraduate Game Design</span> program at <span className="important">George Brown College.</span>
-                            </p>
-                            <p>
-                                One of my proudest accomplishments is writing a <span className="important">path tracing renderer</span> from scratch in <span className="important">C</span>.
-                            </p>
-                            <p>
-                                My <span className="important">favorite pastimes</span> include playing MapleStory and Hearthstone, <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">drawing & painting</a>,
-                                and biking along the Beaches in the summer!
-                            </p>
+                        <div className='aboutme-container'>
+                            <img src="self.jpg" alt="A picture of me!"></img>
+                            <div className='description'>
+                                <p>
+                                    Hi! I'm <span className="important">Arda</span>.
+                                </p>
+                                <p>
+                                    I'm a graduate of the <span className="important">University of Toronto Scarborough Computer Science</span> program, specializing
+                                    in <span className="important">Software Engineering</span>.
+                                </p>
+                                <p>
+                                    I'm currently enrolled in the <span className="important">Postgraduate Game Design</span> program at <span className="important">George Brown College.</span>
+                                </p>
+                                <p>
+                                    One of my proudest accomplishments is writing a <span className="important">path tracing renderer</span> from scratch in <span className="important">C</span>.
+                                </p>
+                                <p>
+                                    My <span className="important">favorite pastimes</span> include playing MapleStory, <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">drawing & painting</a>, playing guitar,
+                                    cooking with my girlfriend and biking along the Beaches in the summer!
+                                </p>
+                            </div>
                         </div>
                     }></BodyBubble>
                 </div>

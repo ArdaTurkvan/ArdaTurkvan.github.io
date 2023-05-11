@@ -17,7 +17,7 @@
 .project-header-wrap {
     position: relative;
     z-index: 1;
-    top: 3vw;
+    top: 2.25vw;
 }
 
 .bubble.project-header {
@@ -27,14 +27,13 @@
 }
 
 .project-header h4 {
-    font-size: 2.3vw;
+    font-size: 1.75vw;
 }
 
 .image-display {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
 .description img {
@@ -42,3 +41,13 @@
     padding: 0px 1vw;
     border-radius: 50px;
 }
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 500px;
+    padding-top: 20px;
+    position: relative;
+    height: 0;
+    width: 100%;
+  }
+  

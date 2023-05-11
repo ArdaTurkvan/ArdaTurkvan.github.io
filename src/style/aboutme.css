@@ -9,4 +9,16 @@
     background-color: #ffc78e;
     background-size: 80px 80px;
     animation: scrolling 2s linear infinite;
-  }
+}
+
+.aboutme-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutme-container img {
+    width: 27vw;
+    padding: 0px 1vw;
+    border-radius: 100px;
+    object-fit: cover;
+}
