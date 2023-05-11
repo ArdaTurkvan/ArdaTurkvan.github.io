@@ -24,7 +24,7 @@ export default function BodyBubble({ child }) {
             animationRef.current = anime({
                 targets: bubble.current,
                 loop: false,
-                scale: 1.04,
+                scale: 1.0125,
                 direction: "normal",
                 elasticity: 200,
             });

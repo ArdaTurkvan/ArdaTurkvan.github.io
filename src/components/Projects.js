@@ -1,7 +1,6 @@
 import React from 'react'
 import projectData from '../data/projectinfo.jsx'
 import Project from './Project.js';
-import Collapsible from './Collapsible.js';
 import { useInView } from 'react-intersection-observer';
 import Hover from './Hover.js';
 
@@ -39,7 +38,7 @@ export default function Projects() {
                     <div className='subsection-header'><h3>Software</h3></div>
                 </div>
                 {
-                    projectData.projects.filter((project) => project.type === "software").map((project, index) => 
+                    projectData.projects.filter((project) => project.type === "software").sort((a, b) => (a.year < b.year) ? 1 : -1).map((project, index) => 
                     <Project key={index} name={project.name} url={project.url} year={project.year} content={project.content} skills={project.skills}/>)
                 }
 
@@ -47,7 +46,7 @@ export default function Projects() {
                     <div className='subsection-header'><h3>Games</h3></div>
                 </div>
                 {
-                    projectData.projects.filter((project) => project.type === "game").map((project, index) => 
+                    projectData.projects.filter((project) => project.type === "game").sort((a, b) => (a.year < b.year) ? 1 : -1).map((project, index) => 
                     <Project key={index} name={project.name} url={project.url} year={project.year} content={project.content} skills={project.skills} />)
                 }
             </div>

@@ -34,12 +34,23 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap:wrap;
 }
 
 .description img {
     width: 27vw;
-    padding: 0px 1vw;
     border-radius: 50px;
+}
+
+.flex-image-display img {
+    min-width: 500px;
+    border-radius: 50px;
+}
+
+.flex-image-display {
+    flex: 1;
 }
 
 .video-responsive {

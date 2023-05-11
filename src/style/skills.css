@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
     margin-left: 5vw;
     margin-right: 5vw;
 }
@@ -26,6 +26,7 @@
     list-style-type: none;
     padding-left: 0;
     gap: 10px;
+    flex: 33.33%
 }
 
 .skill {
@@ -34,14 +35,14 @@
     align-items: center;
     justify-content: left;
     border-radius: 10px;
-    border: 5px solid #ebfeeb;
+    border: 5px solid #fef6eb;
     padding: 10px 25px;
     flex: 1;
     height: 50px;
 }
 
 li.soft {
-    background-color: rgb(231, 202, 106);
+    background-color: rgb(255, 98, 185);
 }
 
 li.hard {
@@ -49,7 +50,7 @@ li.hard {
 }
 
 li.subject {
-    background-color: rgb(164, 252, 233);
+    background-color: rgb(145, 228, 210);
 }
 
 .icon {
@@ -84,5 +85,5 @@ h5 {
 }
 
 .skill > p {
-    font-size: 14px;
+    font-size: 20px;
 }
