@@ -11,9 +11,9 @@ export default function WavyText({ text, delay=1 }) {
 
     React.useEffect(() => {
         Array.from(textRef.current.children).forEach((span, index) => {
-            setTimeout(() => {
+            setInterval(() => {
                 span.classList.add("wavy");
-            }, index * 60 * delay);
+            }, index*60*delay);
         });
     });
 

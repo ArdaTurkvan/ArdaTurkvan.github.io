@@ -65,7 +65,7 @@ export default function App() {
         <h2 className='subheader cool-subheader'><WavyText text="Software Engineer, Game Designer, Nerd"></WavyText></h2>
       </div>
 
-      <div className='scrolling-background page-container shadow'>
+      <div className='scrolling-background page-container'>
         <AboutMe />
         <Projects />
         <Contact />
