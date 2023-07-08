@@ -8,13 +8,12 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 5vh;
+  height: 40px;
   background: #ffffff00;
   z-index: 2;
   gap: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-left: 30px;
   font-family: "FOT-SeuratProUB";
   transition: 0.3s;
 }
@@ -42,6 +41,16 @@ a.anchor {
   transition: 0.2s;
   transition-timing-function: ease-out;
   text-decoration: none;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar a {
+  font-size: 2vw;
 }
 
 .navbar-item:hover {
