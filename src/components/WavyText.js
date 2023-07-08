@@ -58,6 +58,8 @@ export default function WavyText({ text, delay=1 }) {
     )*/
 
     return (
-        <div className={"wavy-wrap"} ref={textRef}>{[...text].map((letter, index) => <span key={index} className='letter hover-letter'>{letter}</span>)}</div>
+        <div className={"wavy-wrap"} ref={textRef}>
+            { [...text].map((letter, index) => <span key={index} className='letter hover-letter'>{letter}</span>) }
+        </div>
     )
 }

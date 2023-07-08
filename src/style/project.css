@@ -3,7 +3,7 @@
 
 .bubble {
     background-color: #b7f804;
-    border-radius: 60% / 60% 60% 60% 60%;
+    border-radius: 80vw / 80vw 80vw 80vw 80vw;
     /*cursor: pointer;*/
 }
 
@@ -17,18 +17,30 @@
 .project-header-wrap {
     position: relative;
     z-index: 1;
-    top: 2.25vw;
+    top: 20px;
 }
 
 .bubble.project-header {
     display: inline-block;
-    padding: 0rem 3rem;
-    width: 30vw;
+    padding: 0rem 2rem;
+    width: 40vw;
 }
 
 .project-header h4 {
-    font-size: 1.75vw;
+    font-size: 24px;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+
 
 .image-display {
     display: flex;
@@ -40,17 +52,22 @@
 }
 
 .description img {
-    width: 27vw;
-    border-radius: 50px;
+    border-radius: 25px;
+    min-width: 250px;
+    max-width: 500px;
+
 }
 
 .flex-image-display img {
-    min-width: 500px;
     border-radius: 50px;
+    width: 500px;
 }
 
 .flex-image-display {
-    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    min-width: 250px;
 }
 
 .video-responsive {

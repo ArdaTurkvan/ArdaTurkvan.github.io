@@ -33,7 +33,7 @@ export default function Projects() {
 
     function renderContent() {
         return (
-            <div ref={selfRef}>
+            <div ref={selfRef} className='projects-container'>
                 <div className='subsection-header-wrap shadow'>
                     <div className='subsection-header'><h3>Software</h3></div>
                 </div>

@@ -6,7 +6,7 @@ html {
 
 body {
   font-family: "FOT-RodinProUB";
-  font-size: 20px;
+  font-size: 16px;
   background: linear-gradient(0deg, rgb(13, 13, 63) 10%, rgb(39, 0, 146) 25%, rgb(4, 7, 179) 33%);
 }
 
@@ -65,7 +65,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex-flow: center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -77,6 +77,7 @@ body {
   box-sizing: border-box;
   border-radius: 60px;
   border: 10px solid #ebfeeb;
+  gap: 20px;
 }
 
 .content-container {
@@ -89,7 +90,7 @@ body {
 .body-bubble {
   background: #d5ece4d2;
   border: 20px solid #ebfeeb;
-  border-radius: 150px;
+  border-radius: 10vw;
   padding: 3% 3%;
 }
 
@@ -165,6 +166,9 @@ body {
   */
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .App-logo {

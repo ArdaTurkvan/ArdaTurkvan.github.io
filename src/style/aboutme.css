@@ -14,11 +14,19 @@
 .aboutme-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .aboutme-container img {
-    width: 27vw;
+    max-width: 500px;
+    min-width: 50px;
     padding: 0px 1vw;
     border-radius: 100px;
     object-fit: cover;
+    flex: auto;
+}
+
+.aboutme-container .description {
+    max-width: 600px;
 }
