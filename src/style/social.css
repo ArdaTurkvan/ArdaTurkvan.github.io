@@ -34,9 +34,9 @@
     min-height: 60px;
   }
 
-  .resume-icon {
+  /*.resume-icon {
     background-image: url("../media/resume.png");
-  }
+  }*/
 
   .linkedin-icon {
     background-image: url("../media/linkedin.png");

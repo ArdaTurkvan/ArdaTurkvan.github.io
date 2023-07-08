@@ -1,6 +1,5 @@
 import React from 'react'
 import Hover from './Hover';
-import Resume from '../resume.pdf';
 import BodyBubble from './BodyBubble';
 
 export default function Contact() {
