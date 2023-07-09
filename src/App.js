@@ -53,7 +53,14 @@ export default function App() {
 
   function nameTitle() {
     return (
-      <Hover><div className='wavy-text header cool-header'><h1>{[..."Arda Turkvan"].map((letter, index) => <span key={index} className='letter'>{letter}</span>)}</h1></div></Hover>
+      <Hover>
+        <div className='wavy-text header cool-header'>
+          <h1>
+            <span>{[..."Arda"].map((letter, index) => <span key={index} className='letter'>{letter}</span>)}</span>
+            <span>{[..."Turkvan"].map((letter, index) => <span key={index} className='letter'>{letter}</span>)}</span>
+          </h1>
+        </div>
+      </Hover>
     )
   }
 
@@ -62,7 +69,11 @@ export default function App() {
       <Navbar />
       <div id="home" className='parallax header-container'>
         {nameTitle()}
-        <h2 className='subheader cool-subheader'><WavyText text="Software Engineer, Game Designer, Nerd"></WavyText></h2>
+        <div className='subheader-wrap'>
+          <h2 className='subheader cool-subheader'><WavyText text="Software Engineer, "></WavyText></h2>
+          <h2 className='subheader cool-subheader'><WavyText text="Game Designer, "></WavyText></h2>
+          <h2 className='subheader cool-subheader'><WavyText text="Nerd"></WavyText></h2>
+        </div>
       </div>
 
       <div className='scrolling-background page-container'>

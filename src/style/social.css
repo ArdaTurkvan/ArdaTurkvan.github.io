@@ -38,6 +38,10 @@
     background-image: url("../media/resume.png");
   }*/
 
+  .mail-icon {
+    background-image: url("../media/mail.png");
+  }
+
   .linkedin-icon {
     background-image: url("../media/linkedin.png");
   }
