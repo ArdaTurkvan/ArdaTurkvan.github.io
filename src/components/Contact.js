@@ -30,7 +30,7 @@ export default function Contact() {
                 </div>
               </a>
 
-              <a href="https://www.instagram.com/arda_farda/" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/ardaturkvan/" target="_blank" rel="noreferrer">
                 <div className='social-item short-shadow'>
                   <div className='icon instagram-icon social-icon'></div>
                   <p>Instagram</p>

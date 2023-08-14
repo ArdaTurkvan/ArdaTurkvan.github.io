@@ -53,13 +53,18 @@ export default {
         {
             "type": "game",
             "name": "BugByte",
-            "url": "",
-            "year": "2023 - ???",
+            "url": "https://ardaturkvan.itch.io/bugbyte-vertical-slice-demo",
+            "year": "2023*",
             "content": <div>
-                <p>A 2D pixel-art dungeon-crawler roguelite creature-catching game, meant to capture the same emotions as a <a href="https://bulbapedia.bulbagarden.net/wiki/Nuzlocke_Challenge" target="__blank">Pokemon Nuzlocke</a> playthrough. Build an ever-changing team of quirky creatures and keep them alive through strategic combat as you traverse deeper into the Drive to uncover the mysteries of the plague.</p>
-                <p>The game is currently a <span className='important'>work in progress</span>, but I intend to create every aspect of the game by myself. That includes original 32-bit animated <span className='important'>pixel art</span>, all of the <span className='important'>Unity</span> code, and all the <span className='important'>concept art</span> I need.</p>
-                <p>This is a self-driven thesis project, part of the <span className='important'>Game Design program</span> at <span className='important'>George Brown College</span>.</p>
-                <p><span className='important'>Stay tuned!</span></p>
+                <p>A 2D pixel-art dungeon-crawler roguelite creature-catching game, inspired by the idea of a <a href="https://bulbapedia.bulbagarden.net/wiki/Nuzlocke_Challenge" target="__blank">Pokemon Nuzlocke</a> playthrough.</p>
+                <p>I created a <span className='important'>vertical slice</span> demonstration of the game's core ideas. I was the sole programmer, artist, and game designer on the project.</p>
+                <p>During the project, I managed myself by creating my own schedules and deadlines. I pushed myself to learn how to use <span className='important'>Unity</span> and write in <span className='important'>C#</span> by myself. I also <span className='important'>drew and animated</span> all of the art assets in the game. I programmed lots of designer-friendly systems like easy animation flipbooks, editable stat scaling curves, and easily creatable and modular attacks and creatures. I also implemented advanced concepts and algorithms like <span className='important'>A* pathfinding</span> and <span className='important'>Behaviour Trees</span>.</p>
+                <p>I detailed every step of my creation process in a <span className='important'>devlog</span> on my <a href="https://ardaturkvan.itch.io" target="__blank">itch.io page</a>, which you can find <a href="https://ardaturkvan.itch.io/bugbyte-vertical-slice-demo/devlog/571692/devlog-1-introduction" target="__blank">here</a>! This includes technical explanations for code architecture, concept art, and my design thought process.</p>
+                <p>You can also try the game out below:</p>
+                <iframe frameborder="0" src="https://itch.io/embed/2207393" width="552" height="167"><a href="https://ardaturkvan.itch.io/bugbyte-vertical-slice-demo" target="__blank">BugByte - Vertical Slice Demo v1.2 by ArdaTurkvan</a></iframe>
+                <p>This is a self-driven thesis project, part of the <span className='important'>Game Design Postgraduate program</span> at <span className='important'>George Brown College</span>.</p>
+                <p><span className='important'>* May return to this project in the future to develop the idea further</span></p>
+                <p className='important'><em>This GitHub repository is private and available upon request</em></p>
             </div>,
             "skills": {
                 "hard": ["Unity", "C#", "Aseprite", "Photoshop"],
