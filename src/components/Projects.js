@@ -34,7 +34,7 @@ export default function Projects() {
     function renderContent() {
         return (
             <div ref={selfRef} className='projects-container'>
-                <div className='subsection-header-wrap shadow'>
+                <div className='subsection-header-wrap'>
                     <div className='subsection-header'><h3>Software</h3></div>
                 </div>
                 {
@@ -42,7 +42,7 @@ export default function Projects() {
                     <Project key={index} name={project.name} url={project.url} year={project.year} content={project.content} skills={project.skills}/>)
                 }
 
-                <div className='subsection-header-wrap shadow'>
+                <div className='subsection-header-wrap'>
                     <div className='subsection-header'><h3>Games</h3></div>
                 </div>
                 {

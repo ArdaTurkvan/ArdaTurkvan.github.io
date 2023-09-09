@@ -7,16 +7,17 @@ export default {
         {
             "type": "software",
             "name": "Picshare",
-            "url": "https://google.ca",
+            "url": "",
             "year": "2021",
             "content": <div>
                 <p>An online image editing platform written using <span className="important">JavaScript</span>, <span className="important">HTML</span> and <span className="important">CSS</span>, with <span className="important">real-time collaboration</span>. Users can hop in and out of drawing rooms, save images to their profile, and reload them for continued editing in the future. Picshare is a <span className="important">full-stack</span> web application developed by me and my partner, <a href="https://github.com/JohnvadL" target="_blank" rel="noreferrer">John V. Lal</a>, as part of the <span className="important">Web Programming course</span> at <span className="important">University of Toronto Scarborough</span>.</p>
                 <p>As part of the project, I made significant contributions to the early backend architecture through setting up our <span className="important">RESTful web API</span> with <span className="important">Express.js</span>. I was also fully in charge of the website front-end and peer-to-peer connectivity. I designed and wrote all of the UI, the title screen, and the chat.</p>
                 <p>Below is a demo video of the website in action:</p>
+                <p className='important'><em>This GitHub repository is private and available upon request</em></p>
                 <div className='image-display'>
                     <YoutubeEmbed embedId='wtXimtG0aaQ' />
                 </div>
-                <p className='important'><em>This GitHub repository is private and available upon request</em></p>
+                
             </div>,
             "skills": {
                 "soft": ["Self-learning", "Project Management", "Collaboration"],
@@ -34,6 +35,7 @@ export default {
                 <p>Aside from starter code I was given as part of the <span className="important">Computer Graphics course</span> at <span className="important">University of Toronto Scarborough</span>, I created the entire rendering algorithm using <span className="important">C</span>. <span className="important">MATLAB</span> was used to ensure that the math was correct before implementation. The project originally started as a more simple <span className="important">Phong Illumination</span> ray tracer, which then served as a code base for the statistics-based Path Tracing version. I used recursion to simulate thousands of light rays being fired through each pixel of a 1024x1024 image, with each light ray having a maximum of 10 bounces.</p>
                 <p>My render also won the <span className="important">award for being the best render</span> in the class, and I got a mug with the render on it as a prize!</p>
                 <p>The first picture below is the final render, and the second picture is a progress photo taken of two simple spheres, one reflective and one refractive, inside of a <a href="https://en.wikipedia.org/wiki/Cornell_box" target="__blank">Cornell Box</a>.</p>
+                <p className='important'><em>This GitHub repository is private and available upon request</em></p>
                 <div className="image-display">
                     <div className="flex-image-display">
                         <img className="short-shadow" src="pathtracer1.png" alt="The final resulting render that I won an award for!"></img>
@@ -42,7 +44,6 @@ export default {
                         <img className="short-shadow" src="pathtracer2.png" alt="A progress step of the algorithm being ran on a 'Cornell Box', a simple box room with 2 different colored walls and 2 spheres - one reflective and one refractive."></img>
                     </div>
                 </div>
-                <p className='important'><em>This GitHub repository is private and available upon request</em></p>
             </div>,
             "skills": {
                 "hard": ["C", "MATLAB"],
@@ -61,14 +62,14 @@ export default {
                 <p>During the project, I managed myself by creating my own schedules and deadlines. I pushed myself to learn how to use <span className='important'>Unity</span> and write in <span className='important'>C#</span> by myself. I also <span className='important'>drew and animated</span> all of the art assets in the game. I programmed lots of designer-friendly systems like easy animation flipbooks, editable stat scaling curves, and easily creatable and modular attacks and creatures. I also implemented advanced concepts and algorithms like <span className='important'>A* pathfinding</span> and <span className='important'>Behaviour Trees</span>.</p>
                 <p>I detailed every step of my creation process in a <span className='important'>devlog</span> on my <a href="https://ardaturkvan.itch.io" target="__blank">itch.io page</a>, which you can find <a href="https://ardaturkvan.itch.io/bugbyte-vertical-slice-demo/devlog/571692/devlog-1-introduction" target="__blank">here</a>! This includes technical explanations for code architecture, concept art, and my design thought process.</p>
                 <p>You can also try the game out below:</p>
-                <iframe frameborder="0" src="https://itch.io/embed/2207393" width="552" height="167"><a href="https://ardaturkvan.itch.io/bugbyte-vertical-slice-demo" target="__blank">BugByte - Vertical Slice Demo v1.2 by ArdaTurkvan</a></iframe>
+                <div className='align-center'><iframe frameborder="0" src="https://itch.io/embed/2207393" width="552" height="167"><a href="https://ardaturkvan.itch.io/bugbyte-vertical-slice-demo" target="__blank">BugByte - Vertical Slice Demo v1.2 by ArdaTurkvan</a></iframe></div>
                 <p>This is a self-driven thesis project, part of the <span className='important'>Game Design Postgraduate program</span> at <span className='important'>George Brown College</span>.</p>
                 <p><span className='important'>* May return to this project in the future to develop the idea further</span></p>
                 <p className='important'><em>This GitHub repository is private and available upon request</em></p>
             </div>,
             "skills": {
-                "hard": ["Unity", "C#", "Aseprite", "Photoshop"],
-                "subjects": ["Linear Algebra", "Art", "Animation"]
+                "hard": ["Unity", "C#", "Aseprite", "Photoshop", "Trello"],
+                "subjects": ["Linear Algebra", "Art", "Animation", "Software Design"]
             }
         },
         

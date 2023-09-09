@@ -16,16 +16,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #b7f804;
+    background-color: #343633;
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.25s;
     flex: 1;
     justify-content: center;
+    color: white;
   }
 
   .social-item:hover {
-    box-shadow: 12px 12px rgba(0,0,0,0.2);
+    box-shadow: 12px 12px 10px rgba(0,0,0,0.2);
     scale: 1.15;
   }
 
@@ -71,8 +72,7 @@
   .credits {
     margin-top: 40px;
     font-size: 12px;
-    background: #d5ece4d2;
-    border: 8px solid #ebfeeb;
+    background: #ffffff;
     border-radius: 20px;
     padding: 10px 40px;
   }

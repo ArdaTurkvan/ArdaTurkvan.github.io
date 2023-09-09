@@ -70,9 +70,8 @@ export default function App() {
       <div id="home" className='parallax header-container'>
         {nameTitle()}
         <div className='subheader-wrap'>
-          <h2 className='subheader cool-subheader'><WavyText text="Software Engineer, "></WavyText></h2>
-          <h2 className='subheader cool-subheader'><WavyText text="Game Designer, "></WavyText></h2>
-          <h2 className='subheader cool-subheader'><WavyText text="Nerd"></WavyText></h2>
+          <h2 className='subheader cool-subheader'><WavyText text="Software Engineer | "></WavyText></h2>
+          <h2 className='subheader cool-subheader'><WavyText text="Game Designer"></WavyText></h2>
         </div>
       </div>
 

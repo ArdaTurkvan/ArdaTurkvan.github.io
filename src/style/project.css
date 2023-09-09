@@ -2,16 +2,20 @@
 }
 
 .bubble {
-    background-color: #b7f804;
-    border-radius: 80vw / 80vw 80vw 80vw 80vw;
+    background-color: #5CC8FF;
+    border-radius: 20vw / 20vw 20vw 20vw 20vw;
     /*cursor: pointer;*/
 }
 
 .section2 {
+    /*
     background: url('../media/star_pattern_diag.png');
     background-color: #54bed8;
     background-size: 80px 80px;
     animation: scrolling 2s linear infinite;
+    */
+    background-color: #DEC1FF;
+
 }
 
 .project-header-wrap {
@@ -22,14 +26,14 @@
 
 .bubble.project-header {
     display: inline-block;
-    padding: 0rem 2rem;
     width: 40vw;
+    min-width: 350px;
 }
 
 .project-header h4 {
-    font-size: 24px;
+    font-size: 36px;
     color: white;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
 }
 
@@ -77,5 +81,6 @@
     position: relative;
     height: 0;
     width: 100%;
+    text-align: center;
   }
   

@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 36px;
 }
 
 h3 {
@@ -68,7 +68,7 @@ h5 {
 }
 
 .hover-letter:hover {
-  text-shadow: 3px 3px #ff7369, 5px 5px black;
+  text-shadow: 3px 3px #ff7369, 5px 5px #343633;
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 0.15vw;
   transform: translateY(-10px);
@@ -80,13 +80,19 @@ h5 {
 }
 
 .important {
-  color: #2ba4c2;
+  /*color: #2ba4c2;*/
+  color: #7D70BA;
 }
 
 .description {
-  text-align: center;
+  text-align: left;
   margin-top: 1vw;
   margin-bottom: 1vw;
+  color: #343633;
+}
+
+.align-center {
+  text-align: center;
 }
 
 .image-description {
@@ -120,11 +126,11 @@ a:visited {
 }
 
 .header {
-  color: #000;
+  color: #343633;
 }
 
 .subheader {
-  color: #000;
+  color: #343633;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -139,13 +145,13 @@ a:visited {
   text-shadow: 
 						/*0.68vw 0.68vw #ff7369,*/
             5px 5px #ff7369,
-						12px 12px #000000;
+						12px 12px #343633;
 }
 
 .cool-subheader {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: #343633;
   text-shadow: 
 						0px 0px #ff7369;
 }

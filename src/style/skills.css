@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #34796162;
-    border-radius: 100px;
+    background-color: #dfdfdf;
+    border-radius: 10px;
     padding-bottom: 60px;
     padding-top: 20px;
 }
@@ -11,7 +11,7 @@
 .skills-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 10px;
@@ -27,7 +27,7 @@
     list-style-type: none;
     padding-left: 0;
     gap: 10px;
-    flex: 33.33%;
+    flex: 20%;
 }
 
 .skill {
@@ -35,23 +35,22 @@
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    border-radius: 10px;
-    border: 5px solid #fef6eb;
+    border-radius: 5px;
     padding: 10px 25px;
     flex: 1;
     height: 50px;
 }
 
 li.soft {
-    background-color: rgb(255, 98, 185);
+    background-color: #FF7369;
 }
 
 li.hard {
-    background-color: rgb(175, 116, 214);
+    background-color: #7D70BA;
 }
 
 li.subject {
-    background-color: rgb(145, 228, 210);
+    background-color: #5CC8FF;
 }
 
 .icon {
@@ -77,7 +76,8 @@ li.subject {
 .skills-header {
     width: 85%;
     border-radius: 100px;
-    background-color: #b7f804;
+    background-color: #343633;
+    color: white;
 }
 
 .skill > p {
