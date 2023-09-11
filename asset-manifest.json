@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8b56010.css",
-    "main.js": "/static/js/main.a6d90160.js",
+    "main.css": "/static/css/main.b7102951.css",
+    "main.js": "/static/js/main.7d7b81d4.js",
     "static/js/787.b701c5f7.chunk.js": "/static/js/787.b701c5f7.chunk.js",
     "static/media/FOT-SeuratProUB.otf": "/static/media/FOT-SeuratProUB.a63f9cb9ecb87c1b130a.otf",
     "static/media/FOT-RodinProUB.otf": "/static/media/FOT-RodinProUB.cbe840ef15b7d9d5d3d1.otf",
-    "static/media/wave2.gif": "/static/media/wave2.e13e5a47edb34d13c0a2.gif",
     "static/media/coolvetica_comp.otf": "/static/media/coolvetica_comp.d5345494c786e5560f58.otf",
     "static/media/coolvetica.otf": "/static/media/coolvetica.3d81d0e1fdbd5f69b232.otf",
-    "static/media/star_pattern_diag.png": "/static/media/star_pattern_diag.17285ac0c1e1b529b0ce.png",
-    "static/media/dot_pattern_diag.png": "/static/media/dot_pattern_diag.0b30e8a14b632677ab59.png",
     "static/media/error_pattern.png": "/static/media/error_pattern.9d796e514c4eb7534c20.png",
     "index.html": "/index.html",
-    "main.c8b56010.css.map": "/static/css/main.c8b56010.css.map",
-    "main.a6d90160.js.map": "/static/js/main.a6d90160.js.map",
+    "main.b7102951.css.map": "/static/css/main.b7102951.css.map",
+    "main.7d7b81d4.js.map": "/static/js/main.7d7b81d4.js.map",
     "787.b701c5f7.chunk.js.map": "/static/js/787.b701c5f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8b56010.css",
-    "static/js/main.a6d90160.js"
+    "static/css/main.b7102951.css",
+    "static/js/main.7d7b81d4.js"
   ]
 }
