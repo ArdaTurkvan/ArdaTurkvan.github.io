@@ -59,7 +59,7 @@ export default function AboutMe() {
                                     in <span className="important">Software Engineering</span>.
                                 </p>
                                 <p>
-                                    I'm currently enrolled in the <span className="important">Postgraduate Game Design</span> program at <span className="important">George Brown College.</span>
+                                    I'm also a graduate of the <span className="important">Postgraduate Game Design</span> program at <span className="important">George Brown College.</span>
                                 </p>
                                 <p>
                                     One of my proudest accomplishments is writing a <span className="important">path tracing renderer</span> from scratch in <span className="important">C</span>.
