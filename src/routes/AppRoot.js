@@ -16,7 +16,7 @@ export default function AppRoot() {
         <NavbarSocials />
       </div>
 
-      <div className="sm:hidden flex fixed right-0 mx-4 my-4">
+      <div className="sm:hidden flex fixed right-0 mx-4 my-4 z-20">
         <NavHamburger />
       </div>
 
