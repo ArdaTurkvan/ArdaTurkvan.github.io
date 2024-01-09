@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Montserrat Bold";
+    src:
+        /*local("Monsterrat"),*/
+        url("./assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src:
+        /*local("Monsterrat"),*/
+        url("./assets/fonts/SourceSans3-Regular.ttf") format("truetype");
+}
+
+h1 {
+    font-family: "Montserrat Bold";
+}
+
+p {
+    font-family: "Source Sans Pro";
+}
