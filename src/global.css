@@ -11,6 +11,13 @@
 }
 
 @font-face {
+  font-family: "Montserrat Medium";
+  src:
+      /*local("Monsterrat"),*/
+      url("./assets/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "Source Sans Pro";
     src:
         /*local("Monsterrat"),*/
@@ -25,9 +32,17 @@ h1, h2 {
     font-family: "Montserrat Bold";
 }
 
-h3, p {
-    font-family: "Source Sans Pro";
+h3 {
+    font-family: "Montserrat Medium";
+    font-size: 16px;
+    color: rgb(170, 170, 170);
+    /*color: #232527*/
 }
+
+h4, h5, p {
+  font-family: "Source Sans Pro";
+}
+
 
 h2 {
   padding-bottom: 24px;
@@ -45,7 +60,7 @@ p {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: only dark;
 }
 
 .hash-span {
@@ -68,20 +83,20 @@ p {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.secondary-gradient {
+  background: #7e7e7e;
+  background: linear-gradient(-90deg, #7e7e7e 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #7e7e7e 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
 
 .green-blue-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #2e90ff 1.9%, #9fec5f 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #2e90ff 1.9%, #9fec5f 97.5%);
+  background: linear-gradient(90.13deg, #3593ff 1.9%, #00ffd5 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #3593ff 1.9%, #00ffd5 97.5%);
 }
 
 .orange-text-gradient {
@@ -147,6 +162,12 @@ p {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.radial-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1) 80%, rgba(238, 130, 238, 0) 100%);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 /* canvas- styles */

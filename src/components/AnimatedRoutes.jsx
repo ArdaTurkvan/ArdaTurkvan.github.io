@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Home from '../routes/Home/Home.js'
 import Work from '../routes/Work/Work.jsx'
-import Projects from '../routes/Projects/Projects.js'
+import Projects from '../routes/Projects/Projects.jsx'
 import Picshare from '../routes/Projects/picshare/Picshare.js';
 import { Tech } from '../routes/Tech/Tech.jsx';
 

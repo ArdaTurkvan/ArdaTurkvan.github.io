@@ -26,7 +26,7 @@ export default function AppRoot() {
           <NavHamburger />
         </div>
 
-        <div className='min-w-0 min-h-0 overflow-x-visible flex-grow'>
+        <div className='min-w-0 min-h-0 flex-grow'>
           <AnimatedRoutes />
         </div>
 

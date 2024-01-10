@@ -4,16 +4,20 @@
   "homepage": "https://ardaturkvan.github.io",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^9.93.0",
+    "@react-three/fiber": "^8.15.13",
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.2",
     "animejs": "^3.2.2",
     "framer-motion": "^10.17.12",
+    "maath": "^0.10.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.181",
     "react-router-dom": "^6.21.1",
     "react-scripts": "^5.0.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "web-vitals": "^3.5.1"
   },
   "devDependencies": {

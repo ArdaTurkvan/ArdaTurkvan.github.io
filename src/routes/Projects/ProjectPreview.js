@@ -10,10 +10,11 @@ const ProjectCard = ({ index, children }) => {
     const [hover, setHover] = useState(false);
 
     return (
-        <Tilt className="xs:w-[250px] w-full" tiltReverse={true}>
+        <Tilt className="xs:w-[360px] w-full py-6" tiltReverse={true}>
             <motion.div
-                variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-                className={'w-[320px] p-[3px] rounded-[10px] shadow-card transition ' + (hover ? 'green-blue-gradient' : 'violet-gradient')}
+                
+                variants={fadeIn("right", "spring", 0.2 * index, 2)}
+                className={'w-[360px] p-[3px] rounded-[10px] shadow-card transition duration-2000 ' + (hover ? 'green-blue-gradient' : 'bg-tertiary')}
             >
                 <div
                     options={{
@@ -21,7 +22,7 @@ const ProjectCard = ({ index, children }) => {
                         scale: 1,
                         speed: 450
                     }}
-                    className={"hover:cursor-pointer rounded-[10px] py-5 px-12 min-h-[280px] flex flex-col justify-evenly items-center transition " + (hover ? 'bg-tertiary' : 'bg-tertiary')}
+                    className={"hover:cursor-pointer rounded-[10px] py-5 px-12 min-h-[320px] flex flex-col justify-evenly items-center transition " + (hover ? 'bg-primary' : 'bg-tertiary')}
                     onPointerEnter={() => setHover(true)}
                     onPointerLeave={() => setHover(false)}
                 >
@@ -33,6 +34,7 @@ const ProjectCard = ({ index, children }) => {
 }
 
 export default function ProjectPreview({
+    index,
     id,
     title,
     description,
@@ -42,7 +44,7 @@ export default function ProjectPreview({
     return (
         <div>
             <div className="mt-0 flex flex-wrap gap-10">
-                <ProjectCard index={1}>
+                <ProjectCard index={index}>
                     <h3 className="text-[30px]">{title}</h3>
                     <p>{description}</p>
                     <p>preview Image</p>
