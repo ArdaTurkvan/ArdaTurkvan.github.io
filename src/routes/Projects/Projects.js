@@ -2,6 +2,8 @@ import React from 'react'
 import Project from './Project'
 import ProjectPreview from './ProjectPreview'
 
+import { motion } from 'framer-motion'
+
 export default function Projects() {
     
     /*return (
@@ -19,38 +21,42 @@ export default function Projects() {
         </div>
   )*/
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h2 className="sm:text-5xl text-3xl">Projects</h2>
-      <div className="flex gap-40 flex-wrap sm:justify-start justify-center pt-10">
-        <ProjectPreview
+      <ul className="flex gap-40 flex-wrap sm:justify-start justify-center pt-10">
+        <li><ProjectPreview
           id="project-software-1"
           title="PicShare"
           description="description, description, description"
           buttonText="View Project"
           buttonLink="/projects/picshare"
-        />
-        <ProjectPreview
+        /></li>
+        <li><ProjectPreview
           id="project-software-2"
           title="Path Tracing Renderer"
           description="description, description, description"
           buttonText="View Project"
           buttonLink="/projects/pathtrace"
-        />
-        <ProjectPreview
+        /></li>
+        <li><ProjectPreview
           id="project-software-3"
           title="idk"
           description="description, description, description"
           buttonText="View Project"
           buttonLink="/projects/picshare"
-        />
-        <ProjectPreview
+        /></li>
+        <li><ProjectPreview
           id="project-software-3"
           title="idk"
           description="description, description, description"
           buttonText="View Project"
           buttonLink="/projects/picshare"
-        />
-      </div>
-    </div>
+        /></li>
+      </ul>
+    </motion.div>
   )
 }
