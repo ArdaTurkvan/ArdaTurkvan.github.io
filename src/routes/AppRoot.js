@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 
 import { Outlet } from "react-router-dom"
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -8,7 +8,7 @@ import { styles } from '../styles.js'
 import NavbarSocials from '../components/Navbar/NavbarSocials.js'
 import { NavHamburger } from '../components/Navbar/NavHamburger.jsx'
 
-import AnimatedRoutes from '../components/AnimatedRoutes.jsx';
+import AnimatedRoutes from './AnimatedRoutes.jsx';
 
 // NOTE: make use of sm:... to have it so a hamburger menu shows up when the screen is <= sm
 
@@ -26,9 +26,11 @@ export default function AppRoot() {
           <NavHamburger />
         </div>
 
-        <div className='min-w-0 min-h-0 flex-grow'>
+        <Suspense>
+        <div className='min-w-0 min-h-0 m-0 flex-grow overflow-x-clip pl-28'>
           <AnimatedRoutes />
-        </div>
+          </div>
+        </Suspense>
 
       </Router>
 

@@ -7,14 +7,19 @@ import * as random from 'maath/random/dist/maath-random.esm'
 
 const Stars = (props) => {
 
-    const ref = useRef();
+  const ref = useRef();
 
-    const sphere = random.inSphere(new Float32Array(2500), { radius: 1.2 }) // ! this keeps regenerating each time the page loads which makes a stutter - fix that
+  const [sphere, setSphere] = useState(null)
 
-    useFrame((state, delta) => {
-        ref.current.rotation.x -= delta / 10;
-        ref.current.rotation.y -= delta / 15;
-    })
+  useEffect(() => {
+    setSphere(random.inSphere(new Float32Array(2500), { radius: 1 }))
+  }, [])
+
+
+  useFrame((state, delta) => {
+      ref.current.rotation.x -= delta / 10;
+      ref.current.rotation.y -= delta / 15;
+  })
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
@@ -33,7 +38,7 @@ const Stars = (props) => {
 
 const StarsCanvas = () => {
   return (
-    <div className='w-full h-auto absolute inset-0 z-[-1] radial-gradient'> // TODO: Holy moly this gradient is giving me trouble, cant find the source of the problem
+    <div className='h-auto absolute inset-0 z-[-1] radial-gradient'>
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />

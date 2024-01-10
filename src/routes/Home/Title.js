@@ -31,7 +31,6 @@ const Title = () => {
                 }}
             />
             <motion.h2 variants={fadeIn("right", "tween", 0.3, 1)} initial="hidden" whileInView="show" viewport={{once: false}} className="md:text-3xl text-base">Developer | Game Designer | Illustrator</motion.h2>
-            <div className='radial-gradient absolute place-self-center'></div>
         </div>
   )
 }

@@ -8,7 +8,7 @@ import StarsCanvas from '../../components/canvas/Stars'
 // contains title and intro
 // TODO: extract variants from this motion.div and provide all sections with it (section wrapper)
 
-export default function Home(props) {
+export default function Home() {
     return (
         <motion.div
             id="home"
@@ -31,7 +31,7 @@ export default function Home(props) {
                     duration: 0.4
                 }}
             >
-                <StarsCanvas spheres={ props.spheres } />
+                <StarsCanvas />
             </motion.div>
             <Intro></Intro>
         </motion.div>

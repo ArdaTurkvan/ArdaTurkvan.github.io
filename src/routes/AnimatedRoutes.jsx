@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom';
 
-import Home from '../routes/Home/Home.js'
-import Work from '../routes/Work/Work.jsx'
-import Projects from '../routes/Projects/Projects.jsx'
-import Picshare from '../routes/Projects/picshare/Picshare.js';
-import { Tech } from '../routes/Tech/Tech.jsx';
+import Home from './Home/Home.js'
+import Work from './Work/Work.jsx'
+import Projects from './Projects/Projects.jsx'
+import Picshare from './Projects/picshare/Picshare.js';
+import { Tech } from './Tech/Tech.jsx';
 
 import { AnimatePresence } from 'framer-motion'
 
