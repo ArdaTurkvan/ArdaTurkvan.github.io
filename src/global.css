@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -72,12 +73,12 @@ p {
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
+    to bottom,
     #434343,
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
+    to bottom,
     #434343,
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -165,8 +166,9 @@ p {
 }
 
 .radial-gradient {
-  background: radial-gradient(circle at 50% 20%, rgb(44, 44, 44) 30%, rgba(238, 130, 238, 0) 100%);
+  background: radial-gradient(circle at 50% 35%, rgb(44, 44, 44) 10%, rgba(238, 130, 238, 0) 70%);
   background-repeat: no-repeat;
+  position: fixed;
 }
 
 /* canvas- styles */

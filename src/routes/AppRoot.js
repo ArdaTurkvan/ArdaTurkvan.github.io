@@ -17,7 +17,7 @@ export default function AppRoot() {
     <div className="flex">
 
       <Router>
-        <div className="hidden md:flex flex-col justify-between h-screen sticky top-0 left-0 pt-3">
+        <div className="hidden md:flex flex-col justify-between h-screen sticky top-0 left-0 pt-3 z-[1]">
           <Navbar />
           <NavbarSocials />
         </div>
@@ -27,10 +27,12 @@ export default function AppRoot() {
         </div>
 
         <Suspense>
-        <div className='min-w-0 min-h-0 m-0 flex-grow overflow-x-clip pl-28'>
-          <AnimatedRoutes />
+          <div className='min-w-0 min-h-0 m-0 flex-grow pl-0'>
+            <AnimatedRoutes />
           </div>
         </Suspense>
+
+        <div className='h-screen w-screen radial-gradient z-[-2]'></div>
 
       </Router>
 

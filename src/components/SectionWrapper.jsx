@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 
 const SectionWrapper = (Component, idName) =>
     () => {
+
         return (
             <motion.section
                 variants={staggerContainer()}

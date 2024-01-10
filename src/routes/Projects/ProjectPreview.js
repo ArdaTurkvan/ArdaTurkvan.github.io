@@ -10,11 +10,11 @@ const ProjectCard = ({ index, children }) => {
     const [hover, setHover] = useState(false);
 
     return (
-        <Tilt className="xs:w-[360px] w-full py-6" tiltReverse={true}>
+        <Tilt className="xs:w-[360px] w-full" tiltReverse={true}>
             <motion.div
                 
                 variants={fadeIn("right", "spring", 0.2 * index, 2)}
-                className={'w-[360px] p-[3px] rounded-[10px] shadow-card transition duration-2000 ' + (hover ? 'green-blue-gradient' : 'bg-tertiary')}
+                className={'w-[360px] p-[3px] rounded-[10px] shadow-card transition duration-2000 ' + (hover ? 'green-blue-gradient' : 'black-gradient')}
             >
                 <div
                     options={{
@@ -22,7 +22,7 @@ const ProjectCard = ({ index, children }) => {
                         scale: 1,
                         speed: 450
                     }}
-                    className={"hover:cursor-pointer rounded-[10px] py-5 px-12 min-h-[320px] flex flex-col justify-evenly items-center transition " + (hover ? 'bg-primary' : 'bg-tertiary')}
+                    className={"hover:cursor-pointer rounded-[10px] py-5 px-12 h-[560px] flex flex-col justify-evenly items-center transition " + (hover ? 'bg-primary' : 'bg-tertiary')}
                     onPointerEnter={() => setHover(true)}
                     onPointerLeave={() => setHover(false)}
                 >
@@ -39,18 +39,20 @@ export default function ProjectPreview({
     title,
     description,
     buttonText,
-    buttonLink
+    buttonLink,
+    imgSrc
 }) {
     return (
         <div>
+            <Link to={buttonLink}>
             <div className="mt-0 flex flex-wrap gap-10">
                 <ProjectCard index={index}>
-                    <h3 className="text-[30px]">{title}</h3>
-                    <p>{description}</p>
-                    <p>preview Image</p>
-                    <Link to={buttonLink}>View Project</Link>
+                    <h2 className="text-[30px]">{title}</h2>
+                    <p className="text-[16px]">{description}</p>
+                    <img width={'640px'} src={imgSrc} alt="Project preview image" className='mt-auto'></img>
                 </ProjectCard>
             </div>
+            </Link>
         </div>
   )
 }

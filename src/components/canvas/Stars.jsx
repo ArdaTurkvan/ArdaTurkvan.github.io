@@ -38,7 +38,7 @@ const Stars = (props) => {
 
 const StarsCanvas = () => {
   return (
-    <div className='h-auto absolute inset-0 z-[-1] radial-gradient'>
+    <div className='h-auto absolute inset-0 z-[-1]'>
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
