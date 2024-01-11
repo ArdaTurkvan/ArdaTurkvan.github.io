@@ -3,7 +3,7 @@ import React from 'react'
 import styles from '../routes/Home/Title.module.css'
 import { motion } from 'framer-motion'
 
-export const SectionDivider = ({ center, width }) => {
+export const SectionDivider = ({ center=false, width=1, marginY=30 }) => {
 
     const hr_variant = {
         visible: {
@@ -18,7 +18,7 @@ export const SectionDivider = ({ center, width }) => {
     
   return (
     <motion.hr
-          className={'md:w-100 w-[800px] border-secondary my-[30px] ' + ( center ? 'mx-auto' : 'mr-auto')}
+          className={`md:w-100 w-[800px] border-secondary my-[${marginY}px] ` + ( center ? 'mx-auto' : 'mr-auto')}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

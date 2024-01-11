@@ -8,6 +8,10 @@ import Picshare from './Projects/picshare/Picshare.js';
 import { Tech } from './Tech/Tech.jsx';
 
 import { AnimatePresence } from 'framer-motion'
+import Pathtracer from './Projects/pathtracer/Pathtracer.jsx';
+import Bugbyte from './Projects/bugbyte/Bugbyte.jsx';
+import Aotdivision from './Projects/aotdivision/Aotdivision.jsx';
+import Bct from './Projects/bct/Bct.jsx';
 
 export const AnimatedRoutes = () => {
 
@@ -19,7 +23,10 @@ export const AnimatedRoutes = () => {
             <Route path="/work" element={<Work />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/picshare" element={<Picshare />} />
-            <Route path="/tech" element={<Tech />} />
+            <Route path="/projects/pathtracer" element={<Pathtracer />} />
+            <Route path="/projects/bugbyte" element={<Bugbyte />} />
+            <Route path="/projects/aotdivision" element={<Aotdivision />} />
+            <Route path="/projects/bct" element={<Bct />} />
         </Routes>
     </AnimatePresence>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import SectionDivider from '../../components/SectionDivider'
 
 export const Tech = () => {
   return (
@@ -15,6 +16,7 @@ export const Tech = () => {
     >
       <h2 className="sm:text-5xl text-3xl">Tech</h2>
       <h3>WHAT I LIKE TO USE</h3>
+      <SectionDivider center={false} width={2} />
     </motion.div>
   )
 }

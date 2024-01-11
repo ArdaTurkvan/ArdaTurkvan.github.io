@@ -6,6 +6,7 @@ import Home from './routes/Home/Home'
 import reportWebVitals from './reportWebVitals';
 
 import AppRoot from './routes/AppRoot';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 /* <RouterProvider router={router} className="relative z-0 bg-primary bg-cover bg-no-repeat bg-center" /> */
 const root = ReactDOM.createRoot(document.getElementById('root'));

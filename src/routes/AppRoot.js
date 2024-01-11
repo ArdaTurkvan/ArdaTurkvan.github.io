@@ -27,7 +27,7 @@ export default function AppRoot() {
         </div>
 
         <Suspense>
-          <div className='min-w-0 min-h-0 m-0 flex-grow pl-0'>
+          <div className='min-w-0 min-h-0 m-0 flex-grow ml-3 md:ml-0'>
             <AnimatedRoutes />
           </div>
         </Suspense>

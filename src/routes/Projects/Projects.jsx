@@ -37,7 +37,7 @@ const Projects = () => {
     }}
       className='mt-5'
     >
-      <h2 className="sm:text-5xl text-3xl">Projects</h2>
+      <h2 className="md:text-5xl text-3xl">Projects</h2>
       <h3>MY PORTFOLIO</h3>
       <SectionDivider center={false} width={2} />
       <ProjectList />
@@ -47,12 +47,12 @@ const Projects = () => {
 
 export const ProjectList = () => {
   return (
-    <ul className="flex md:gap-4 flex-wrap md:justify-start justify-center pt-10">
+    <ul className="flex md:gap-4 gap-2 flex-wrap md:justify-start justify-center pt-10">
       <li><ProjectPreview
         index={1}
         id="project-software-1"
         title="PicShare"
-        description="An online real-time collaborative image editing application I developed. Users can create profiles, make drawing rooms, and save images to the profile for later."
+        description="An online full-stack real-time collaborative image editing application I developed. Users can create profiles, make drawing rooms, and save images to the profile for later."
         buttonText="View Project"
         buttonLink="/projects/picshare"
         imgSrc="./picshare-preview.png"
@@ -63,7 +63,7 @@ export const ProjectList = () => {
         title="Path Tracing Renderer"
         description="A high-performance path tracing rendering algorithm I wrote in C. Path tracing is a technique used for high quality visual effects in 3D media such as games and movies."
         buttonText="View Project"
-        buttonLink="/projects/pathtrace"
+        buttonLink="/projects/pathtracer"
         imgSrc="./pathtracer-preview.png"
 
       /></li>
@@ -73,7 +73,7 @@ export const ProjectList = () => {
         title="BugByte"
         description="A game demo for an original game idea that I created from scratch. BugByte is a 2D strategy roguelike action game all about capturing creatures and exploring a vast dungeon."
         buttonText="View Project"
-        buttonLink="/projects/picshare"
+        buttonLink="/projects/bugbyte"
         imgSrc="./bugbyte-preview.png"
 
       /></li>
@@ -83,7 +83,7 @@ export const ProjectList = () => {
         title="Attack on Titan: Division"
         description="A fan-made board game created by myself and some partners. Assets and code were created and put into Tabletop Simulator, a digital platform for boardgames."
         buttonText="View Project"
-        buttonLink="/projects/picshare"
+        buttonLink="/projects/aotdivision"
         imgSrc="./aotdivision-preview.png"
       /></li>
       <li><ProjectPreview
@@ -92,7 +92,7 @@ export const ProjectList = () => {
         title="Break the Card Tower"
         description="A game demo for an original game idea created as a team for the Level Up Showcase in Toronto. Break the Card Tower is a roguelike deckbuilding card game about making crazy combinations to break the game."
         buttonText="View Project"
-        buttonLink="/projects/picshare"
+        buttonLink="/projects/bct"
         imgSrc="./bct-preview.png"
       /></li>
     </ul>
