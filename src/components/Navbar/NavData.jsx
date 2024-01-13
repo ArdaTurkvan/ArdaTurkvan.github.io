@@ -1,7 +1,7 @@
 export const layout = [
     {
-        url: '/#title',
-        text: 'Home'
+        url: '/',
+        text: 'About Me'
     },
     {
         url: '/work',

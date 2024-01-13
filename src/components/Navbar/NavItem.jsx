@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 // *NOTE: this will have a state and a link, which will take care of the animating and selected styling
 export const NavItem = ({ to, children }) => {
-
+  
   const navigate = useNavigate();
   const handleOnClick = () => { navigate(to); }
 

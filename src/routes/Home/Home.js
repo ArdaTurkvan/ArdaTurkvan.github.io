@@ -27,7 +27,28 @@ export default function Home() {
             }}
         >
             <Title></Title>
+
+            <div className='absolute xs:bottom-10 bottom-32 w-[95%] md:w-[80%] flex justify-center items-center'>
+                <a href="#intro">
+                    <div className='w-[35px] h-[64px] rounded-3xl border-4 border-white-100 flex justify-center items-start p-2'>
+                        <motion.dev
+                            animate={{
+                                y: [0, 24, 0]
+                            }}
+                            transition={{
+                                duration: 1.25,
+                                repeat: Infinity,
+                                repeatType: 'loop',
+                                ease: "easeOut"
+                            }}
+                            className='w-3 h-3 rounded-full bg-white-100 mb-1'
+                        />
+                    </div>
+                </a>
+            </div>
+
             <StarsCanvas />
+
             <Intro></Intro>
         </motion.div>
     )
