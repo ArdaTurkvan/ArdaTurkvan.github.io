@@ -11,10 +11,8 @@ export default function Navbar() {
             <div className={`${styles.paddingX} flex flex-col gap-3`}>
                 {
                     layout.map((item, index) => {
-                        //<NavItem link={item.link}>aaaa</NavItem>
-                        console.log(item.url);
                         return (
-                            <NavItem to={item.url}><h2 className='text-center mt-6 mx-8 rounded-[30px] whitespace-nowrap'>{item.text}</h2></NavItem>
+                            <NavItem to={item.url} key={index}><h2 className='text-center mt-6 mx-8 rounded-[30px] whitespace-nowrap'>{item.text}</h2></NavItem>
                         )
                     })
                 }

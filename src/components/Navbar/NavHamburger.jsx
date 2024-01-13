@@ -49,10 +49,8 @@ const NavHamburgerItems = ({ setOpen }) => {
     <div className={`${styles.paddingX} flex flex-col flex-grow`} onClick={() => { setOpen(false); }}>
         {
             layout.map((item, index) => {
-                //<NavItem link={item.link}>aaaa</NavItem>
-                console.log(item.url);
                 return (
-                  <div className='flex-grow flex flex-col justify-center'>
+                  <div className='flex-grow flex flex-col justify-center' key={index}>
                     <motion.div
                       initial="hidden"
                       whileInView="show"

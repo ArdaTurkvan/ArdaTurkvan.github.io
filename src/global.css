@@ -17,6 +17,10 @@
       url("./assets/fonts/Montserrat-Medium.ttf") format("truetype");
 }
 
+.worktitle {
+  font-family: "Montserrat Medium";
+}
+
 @font-face {
     font-family: "Source Sans Pro";
     src:
@@ -57,6 +61,8 @@ p {
 p > a {
   color: #2196f3;
 }
+
+
 
 /* */
 

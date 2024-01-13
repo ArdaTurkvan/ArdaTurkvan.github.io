@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 export default function NavbarSocials() {
     return (
         <div className="flex flex-col items-center py-6">
-            <motion.p
+            <motion.div
                 whileHover={{
                     color: '#2196f3',
                     textDecoration: 'underline',
@@ -22,9 +22,9 @@ export default function NavbarSocials() {
                     scale: 0.9
                 }}
             >
-                <a href="https://ca.linkedin.com/in/arda-turkvan-8a6a96211" target="_blank"><div className={styles.linkedinicon + " " + styles.icon} /></a>
-            </motion.p>
-            <motion.p
+                <a href="https://ca.linkedin.com/in/arda-turkvan-8a6a96211" target="_blank"><p className={styles.linkedinicon + " " + styles.icon} /></a>
+            </motion.div>
+            <motion.div
                 whileHover={{
                     color: '#2196f3',
                     textDecoration: 'underline',
@@ -38,8 +38,8 @@ export default function NavbarSocials() {
                     scale: 0.9
                 }}
             >
-                <a href="https://github.com/ArdaTurkvan" target="_blank"><div className={styles.githubicon + " " + styles.icon} /></a>
-            </motion.p>
+                <a href="https://github.com/ArdaTurkvan" target="_blank"><p className={styles.githubicon + " " + styles.icon} /></a>
+            </motion.div>
         </div>
     )
 }

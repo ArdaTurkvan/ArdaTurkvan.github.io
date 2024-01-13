@@ -4,10 +4,6 @@ export const layout = [
         text: 'Home'
     },
     {
-        url: '/#intro',
-        text: 'About'
-    },
-    {
         url: '/work',
         text: 'Work'
     },
