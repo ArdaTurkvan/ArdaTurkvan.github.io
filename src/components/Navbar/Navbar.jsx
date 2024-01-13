@@ -2,27 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../../styles'
 import NavItem from './NavItem'
+import { layout } from './NavData'
 
 export default function Navbar() {
 
-    const layout = [
-        {
-            url: '/#title',
-            text: 'Home'
-        },
-        {
-            url: '/#intro',
-            text: 'About'
-        },
-        {
-            url: '/work',
-            text: 'Work'
-        },
-        {
-            url: '/projects',
-            text: 'Projects'
-        },
-    ]
     return (
         <nav>
             <div className={`${styles.paddingX} flex flex-col gap-3`}>

@@ -1,7 +1,7 @@
 import React from 'react'
 import NavItem from './NavItem'
 import { Link } from 'react-router-dom'
-import styles from './NavbarSocials.module.css'
+import styles from './Navbar.module.css'
 import { motion } from 'framer-motion'
 
 export default function NavbarSocials() {

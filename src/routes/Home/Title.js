@@ -17,7 +17,7 @@ const Title = () => {
     }
     return (
         <div id="title" className="relative w-full h-screen flex flex-col items-start justify-center">
-            <motion.h1 variants={fadeIn("right", "tween", 0.3, 1)} initial="hidden" whileInView="show" viewport={{once: false}} className="md:text-9xl text-6xl">Arda&nbsp;Turkvan</motion.h1>
+            <motion.h1 variants={fadeIn("right", "tween", 0.3, 1)} initial="hidden" whileInView="show" viewport={{once: false}} className="lg:text-9xl md:text-7xl :text-5xl">Arda&nbsp;Turkvan</motion.h1>
             <motion.hr
                 className={`${styles.divider_title}`}
                 initial="hidden"

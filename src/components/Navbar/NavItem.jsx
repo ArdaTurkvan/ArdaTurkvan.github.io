@@ -11,19 +11,24 @@ export const NavItem = ({ to, children }) => {
   return (
       <motion.div
           whileHover={{
-              color: '#2196f3',
-              textDecoration: 'underline',
               backgroundColor: 'rgba(80, 80, 80, 0.5)',
               scale: 1.2,
+              borderRadius: 10,
               transition: {
-                  duration: 0.3,
+                  duration: 0.1,
                   type: "tween"
               },
           }}
           whileTap={{
-              scale: 0.9
+              backgroundColor: 'rgba(50, 50, 50, 0.5)',
+              color: '#2196f3',
+              scale: 0.995,
+              transition: {
+                duration: 0.05,
+                type: "easeOut"
+            },
           }}
-          className='hover:cursor-pointer w-full'
+          className='hover:cursor-pointer w-full h-full select-none'
           onClick={handleOnClick}
     >
       {children}
