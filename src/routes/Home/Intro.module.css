@@ -1,0 +1,8 @@
+.listtext {
+    list-style-type: square;
+    margin-bottom: 12px;
+}
+
+.listtext > li {
+    margin-left: 24px;
+}

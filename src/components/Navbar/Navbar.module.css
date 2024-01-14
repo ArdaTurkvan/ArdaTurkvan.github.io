@@ -1,0 +1,19 @@
+.icon {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.linkedinicon {
+    background-image: url('../../../public/icons8-linkedin.svg');
+}
+
+.githubicon {
+    background-image: url('../../../public/icons8-github.svg');
+}
+
+.menuicon {
+    background-image: url('../../../public/icons8-menu.svg');
+}
