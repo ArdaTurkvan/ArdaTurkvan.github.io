@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 
 @font-face {
     font-family: "Montserrat Bold";
@@ -43,6 +31,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color-scheme: dark;
 }
 
 h1, h2 {
