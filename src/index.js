@@ -2,13 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/index.css';
 import './global.css'
-import Home from './routes/Home/Home'
 import reportWebVitals from './reportWebVitals';
 
 import AppRoot from './routes/AppRoot';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-/* <RouterProvider router={router} className="relative z-0 bg-primary bg-cover bg-no-repeat bg-center" /> */
+// Created by Arda Turkvan
+// -----------------------
+// Technologies used:
+// - React
+// - React-router-dom
+// - Three.js
+// - Framer motion
+// - React vertical timeline
+// - Tailwindcss
+// --------------------------------------------------------------------------------------------------------------------------------------
+// massive thanks to JavaScript Mastery on YouTube for starting code ideas and help with learning framer-motion, tailwindcss and threejs.
+// https://www.youtube.com/watch?v=0fYi8SGA20k
+// --------------------------------------------------------------------------------------------------------------------------------------
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

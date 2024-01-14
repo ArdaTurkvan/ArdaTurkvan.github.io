@@ -28,7 +28,7 @@ export default function Home() {
         >
             <Title></Title>
 
-            <div className='absolute xs:bottom-10 bottom-32 w-[95%] md:w-[80%] flex justify-center items-center'>
+            <div className='absolute xs:bottom-10 bottom-32 w-[95%] md:w-[90%] flex justify-center items-center'>
                 <a href="#intro">
                     <div className='w-[35px] h-[64px] rounded-3xl border-4 border-white-100 flex justify-center items-start p-2'>
                         <motion.dev

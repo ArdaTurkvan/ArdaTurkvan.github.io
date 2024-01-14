@@ -1,6 +1,4 @@
 import React from 'react'
-import NavItem from './NavItem'
-import { Link } from 'react-router-dom'
 import styles from './Navbar.module.css'
 import { motion } from 'framer-motion'
 
@@ -11,7 +9,7 @@ export default function NavbarSocials() {
                 whileHover={{
                     color: '#2196f3',
                     textDecoration: 'underline',
-                    fill: "red" ,
+                    fill: "#ffffff" ,
                     scale: 1.2,
                     transition: {
                         duration: 0.3,
@@ -22,7 +20,7 @@ export default function NavbarSocials() {
                     scale: 0.9
                 }}
             >
-                <a href="https://ca.linkedin.com/in/arda-turkvan-8a6a96211" target="_blank"><p className={styles.linkedinicon + " " + styles.icon} /></a>
+                <a href="https://ca.linkedin.com/in/arda-turkvan-8a6a96211" target="_blank" rel="noreferrer"><p className={styles.linkedinicon + " " + styles.icon} /></a>
             </motion.div>
             <motion.div
                 whileHover={{
@@ -38,7 +36,7 @@ export default function NavbarSocials() {
                     scale: 0.9
                 }}
             >
-                <a href="https://github.com/ArdaTurkvan" target="_blank"><p className={styles.githubicon + " " + styles.icon} /></a>
+                <a href="https://github.com/ArdaTurkvan" target="_blank" rel="noreferrer"><p className={styles.githubicon + " " + styles.icon} /></a>
             </motion.div>
         </div>
     )
