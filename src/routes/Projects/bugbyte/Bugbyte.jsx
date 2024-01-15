@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import { motion } from 'framer-motion'
 import SectionDivider from '../../../components/SectionDivider'
 import BackButton from '../../../components/BackButton'
@@ -37,22 +36,22 @@ export default function Bugbyte() {
 
                 <p>You can also try the game out below:</p>
                 <div className='flex flex-col items-center md:items-start mb-6'>
-                    <iframe className="flex-shrink-0" frameborder="0" src="https://itch.io/embed/2207393?dark=true" width="552" height="167"><a href="https://ardaturkvan.itch.io/bugbyte-vertical-slice-demo">BugByte - Vertical Slice Demo v1.3 by ArdaTurkvan</a></iframe>
+                    <iframe title='BugByte itch.io embedded link' className="flex-shrink-0" frameborder="0" src="https://itch.io/embed/2207393?dark=true" width="552" height="167"><a href="https://ardaturkvan.itch.io/bugbyte-vertical-slice-demo">BugByte - Vertical Slice Demo v1.3 by ArdaTurkvan</a></iframe>
                 </div>      
                 <p>This is a self-driven thesis project, part of the Game Design Postgraduate program at George Brown College.</p>
             </div>
             <Carousel className='md:max-w-[40%] max-w-full mr-6 mt-6' showArrows={true} dynamicHeight={false}>
                 <div>
-                    <img src="/bugbyte/carousel-1.png"></img>
+                    <img src="/bugbyte/carousel-1.png" alt="bugbyte"></img>
                 </div>
                 <div>
-                    <img src="/bugbyte/carousel-2.png"></img>
+                    <img src="/bugbyte/carousel-2.png" alt="bugbyte"></img>
                 </div>
                 <div>
-                    <img src="/bugbyte/carousel-3.png"></img>
+                    <img src="/bugbyte/carousel-3.png" alt="bugbyte"></img>
                 </div>
                 <div>
-                    <img src="/bugbyte/carousel-4.png"></img>
+                    <img src="/bugbyte/carousel-4.png" alt="bugbyte"></img>
                 </div>
             </Carousel>  
         </div>

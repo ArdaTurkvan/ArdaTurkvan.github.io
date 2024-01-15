@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Project from './Project'
 import ProjectPreview from './ProjectPreview'
 
 import { motion } from 'framer-motion'

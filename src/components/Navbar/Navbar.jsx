@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import { styles } from '../../styles'
 import NavItem from './NavItem'
 import { layout } from './NavData'

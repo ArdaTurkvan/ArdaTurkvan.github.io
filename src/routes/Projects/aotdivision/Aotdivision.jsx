@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import { motion } from 'framer-motion'
 import SectionDivider from '../../../components/SectionDivider'
 import BackButton from '../../../components/BackButton'
@@ -34,10 +33,10 @@ export default function Aotdivision() {
             </div>
             <Carousel className='md:max-w-[40%] max-w-full mr-6 mt-6' showArrows={true} dynamicHeight={false}>
                 <div>
-                    <img src="/aotdivision/carousel-1.png"></img>
+                    <img src="/aotdivision/carousel-1.png" alt="Attack on titan division logo"></img>
                 </div>
                 <div>
-                    <img src="/aotdivision/carousel-2.png"></img>
+                    <img src="/aotdivision/carousel-2.png" alt="Attack on titan division screenshot in Tabletop Simulator"></img>
                 </div>
             </Carousel>  
         </div>

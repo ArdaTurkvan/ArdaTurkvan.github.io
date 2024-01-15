@@ -1,6 +1,5 @@
 import React from 'react'
 
-import styles from '../routes/Home/Title.module.css'
 import { motion } from 'framer-motion'
 
 export const SectionDivider = ({ center=false, width=1, marginY=30, once=true, duration=1.1, delay=0 }) => {

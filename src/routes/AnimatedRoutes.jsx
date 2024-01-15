@@ -5,8 +5,6 @@ import Home from './Home/Home.js'
 import Work from './Work/Work.jsx'
 import Projects from './Projects/Projects.jsx'
 import Picshare from './Projects/picshare/Picshare.js';
-import { Tech } from './Tech/Tech.jsx';
-
 import { AnimatePresence } from 'framer-motion'
 import Pathtracer from './Projects/pathtracer/Pathtracer.jsx';
 import Bugbyte from './Projects/bugbyte/Bugbyte.jsx';

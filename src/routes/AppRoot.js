@@ -1,10 +1,8 @@
 import React, { Suspense } from 'react'
 
-import { Outlet } from "react-router-dom"
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 import Navbar from '../components/Navbar/Navbar'
-import { styles } from '../styles.js'
 import NavbarSocials from '../components/Navbar/NavbarSocials.js'
 import { NavHamburger } from '../components/Navbar/NavHamburger.jsx'
 

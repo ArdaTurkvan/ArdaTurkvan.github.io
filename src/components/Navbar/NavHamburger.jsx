@@ -4,7 +4,6 @@ import { styles } from '../../styles'
 import navstyles from './Navbar.module.css'
 import NavItem from './NavItem'
 import { layout } from './NavData'
-import BackButton from '../BackButton'
 import { motion } from 'framer-motion'
 import { textVariant } from '../../utils/motion'
 import SectionDivider from '../SectionDivider'
@@ -18,7 +17,7 @@ export const NavHamburger = () => {
 
   return (
     <div className={' flex flex-col content-center'}>
-      <nav className={ (open ? ' flex flex-col content-center bg-black opacity-85 h-full w-screen' : 'hidden') + ' transition-all'}>
+      <nav className={ (open ? ' flex flex-col content-center bg-primary opacity-85 h-full w-screen' : 'hidden') + ' transition-all'}>
         <NavHamburgerItems setOpen={ setOpen } /> 
       </nav>
       <motion.div className={navstyles.menuicon + ' ' + navstyles.icon + ' fixed right-0 mt-6 mr-6'} onClick={handleOnClick}

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import { motion } from 'framer-motion'
 import SectionDivider from '../../../components/SectionDivider'
 import BackButton from '../../../components/BackButton'
@@ -35,13 +34,13 @@ export default function Picshare() {
         </div>
         <Carousel className='md:max-w-[40%] max-w-full mr-6 mt-6' showArrows={true} dynamicHeight={false}>
           <div>
-            <img src="/picshare/carousel-1.png"></img>
+            <img src="/picshare/carousel-1.png" alt="picshare"></img>
           </div>
           <div>
-            <img src="/picshare/carousel-2.png"></img>
+            <img src="/picshare/carousel-2.png" alt="picshare"></img>
           </div>
           <div>
-            <img src="/picshare/carousel-3.png"></img>
+            <img src="/picshare/carousel-3.png" alt="picshare"></img>
           </div>
         </Carousel>
       </div>
