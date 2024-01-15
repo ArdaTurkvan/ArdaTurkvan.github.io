@@ -11,7 +11,7 @@ const ProjectCard = ({ index, children }) => {
     const [hover, setHover] = useState(false);
 
     return (
-        <Tilt className="xs:w-[360px] w-full" tiltReverse={true}>
+        <Tilt className="md:w-[360px] w-full" tiltReverse={true} tiltEnable={window.innerHeight <= 768 ? false : true}>
             <motion.div
                 
                 variants={fadeIn("right", "spring", 0.2 * index, 2)}
@@ -44,8 +44,7 @@ export default function ProjectPreview({
     imgSrc
 }) {
     return (
-        <div>
-            <Link to={buttonLink}>
+        <Link to={buttonLink}>
             <div className="mt-0 flex flex-wrap gap-10">
                 <ProjectCard index={index}>
                     <h2 className="text-[24px] text-center whitespace-nowrap">{title}</h2>
@@ -54,7 +53,6 @@ export default function ProjectPreview({
                     <img width={'640px'} src={imgSrc} alt="Project preview image" className='mt-auto'></img>
                 </ProjectCard>
             </div>
-            </Link>
-        </div>
+        </Link>
   )
 }

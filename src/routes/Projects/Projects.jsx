@@ -37,9 +37,11 @@ const Projects = () => {
     }}
       className='mt-5'
     >
-      <h2 className="md:text-5xl text-3xl">Projects</h2>
-      <h3>MY PORTFOLIO</h3>
-      <SectionDivider center={false} width={2} />
+      <div className='ml-3'>
+        <h2 className="md:text-5xl text-3xl">Projects</h2>
+        <h3>MY PORTFOLIO</h3>
+        <SectionDivider center={false} width={2} />
+      </div>
       <ProjectList />
     </motion.div>
   )

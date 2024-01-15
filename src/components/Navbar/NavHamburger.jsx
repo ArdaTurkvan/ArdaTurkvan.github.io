@@ -17,8 +17,8 @@ export const NavHamburger = () => {
   }
 
   return (
-    <div className=' flex flex-col content-center'>
-      <nav className={ (open ? ' flex flex-col content-center bg-primary h-full w-screen' : 'hidden') + ' transition-all'}>
+    <div className={' flex flex-col content-center'}>
+      <nav className={ (open ? ' flex flex-col content-center bg-black opacity-85 h-full w-screen' : 'hidden') + ' transition-all'}>
         <NavHamburgerItems setOpen={ setOpen } /> 
       </nav>
       <motion.div className={navstyles.menuicon + ' ' + navstyles.icon + ' fixed right-0 mt-6 mr-6'} onClick={handleOnClick}

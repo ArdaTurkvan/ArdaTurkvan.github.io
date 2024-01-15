@@ -59,9 +59,11 @@ export const Work = () => {
       }}
       className='mt-5'
     >
+    <div className='ml-3'>
       <h2 className="sm:text-5xl text-3xl">Work</h2>
       <h3>WHAT I HAVE DONE SO FAR</h3>
-      <SectionDivider center={false} width={2} />
+        <SectionDivider center={false} width={2} />
+    </div>
 
       <div className='mt-24'>
         <VerticalTimeline>
