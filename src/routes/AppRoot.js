@@ -22,12 +22,12 @@ export default function AppRoot() {
           <NavbarSocials />
         </div>
 
-        <div className="md:hidden md:opacity-0 flex fixed right-0 z-20 w-full h-full transition-all">
+        <div className="md:hidden md:opacity-0 flex fixed right-0 z-20 h-full transition-all">
           <NavHamburger />
         </div>
 
         <Suspense>
-          <div className='min-w-0 min-h-0 m-0 flex-grow ml-3 md:ml-0'>
+          <div className='min-w-0 min-h-0 m-0 flex-grow'>
             <AnimatedRoutes />
           </div>
         </Suspense>
