@@ -22,6 +22,7 @@ export default function Aotdivision() {
         <BackButton to='/projects' />
         <h2 className={"md:text-5xl text-3xl"}>Attack on Titan: Division</h2>
       </div>
+      <div className="ml-3">
       <h3>GAME DESIGN PROJECT</h3>
           <SectionDivider center={false} width={2} />
         <div className='flex md:flex-row flex-col'>
@@ -40,6 +41,7 @@ export default function Aotdivision() {
                 </div>
             </Carousel>  
         </div>
+      </div>
     </motion.div>
   )
 }
